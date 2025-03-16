@@ -2,14 +2,10 @@
 
 <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
-### Hello 🌎!
 
- 🚀
-
-
-  - 🔭 Atualmente estou trabalhando em projetos que envolvem arquitetura e dados, separações de bases de dados, expurgo de tabelas, replicação e migração de dados.
-  - 🌱 Atualmente estou aprendendo mais sobre terraform, para automatizar a criação de infra.
-  - 💬 Converse comigo sobre **Projetos, Banco de dados, MySQ, SQL Server, Postgres, Cloud**
+  - Atualmente estou trabalhando em projetos que envolvem arquitetura e dados, separações de bases de dados, expurgo de tabelas, replicação e migração de dados.
+  - Atualmente estou aprendendo mais sobre terraform, para automatizar a criação de infra.
+  - Converse comigo sobre **Projetos, Banco de dados, MySQ, SQL Server, Postgres, Cloud**
 
 
 <p align="left">
@@ -38,7 +34,7 @@
 
 
 ------
- <u> Tecnologias </u>
+<u> Tecnologias </u>
 
 <p align="center">
   <img alt="Python" src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white" />
@@ -74,8 +70,10 @@
   <img alt="GitHub Actions" src="https://img.shields.io/badge/github%20actions%20-%232671E5.svg?&style=for-the-badge&logo=github%20actions&logoColor=white" />
   <img alt="TravisCI" src="https://img.shields.io/badge/travisci%20-%232B2F33.svg?&style=for-the-badge&logo=travis&logoColor=white" />
 
-  <img alt="Sublime Text" src="https://img.shields.io/badge/sublimetext%20-%23FF9800?style=for-the-badge&logo=Sublime-Text&logoColor=white" />
-  <img alt="Asana" src="https://img.shields.io/badge/asana%20-%23273347?style=for-the-badge&logo=Asana&logoColor=white" />
+  <img alt="SQL Server" src="https://img.shields.io/badge/sqlserver-%23CC2927.svg?&style=for-the-badge&logo=microsoft-sql-server&logoColor=white" />
+
+
+  
 </p>
 
 
