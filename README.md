@@ -66,9 +66,8 @@
 
   <img alt="Apache Superset" src="https://img.shields.io/badge/Apache%20Superset-%2320A6C9.svg?&style=for-the-badge&logo=apache-superset&logoColor=white" />
   <img alt="Apache Airflow" src="https://img.shields.io/badge/Apache%20Airflow-%017CEE.svg?&style=for-the-badge&logo=apache-airflowt&logoColor=white" />
-  <img alt="Apache Superset" src="https://img.shields.io/badge/Apache%20Superset-%2320A6C9.svg?&style=for-the-badge&logo=apache-superset&logoColor=white" />
 
-
+  <img alt="Aws" src="https://img.shields.io/badge/AWS%20-%FF9900.svg?&style=for-the-badge&logo=awst&logoColor=white" />
   
 </p>
 
