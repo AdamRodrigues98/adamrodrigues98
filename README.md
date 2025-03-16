@@ -1,8 +1,8 @@
-## Adam Rodrigues
+# 🚀 Olá, eu sou Adam Rodrigues - DBA Cloud 
 
 <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
-### Hello 🌎, Eu sou o Adam Rodrigues
+### Hello 🌎!
 
  🚀
 
