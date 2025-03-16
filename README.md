@@ -15,7 +15,11 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=AdamRodrigues98&label=Profile%20views&color=0e75b6&style=flat" alt="AdamRodrigues98" /> </p>
 
+<h3>Contato:</h3>
 
+<a href="https://www.linkedin.com/in/adam-rodrigues-067a54150"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="mailto:adamrodrigues98@gmail.com"><img src="https://img.shields.io/badge/gmail-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<hr>
 ------
 
 <p align="center">
