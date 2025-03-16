@@ -40,7 +40,7 @@
 ------
  <u> Tecnologias </u>
 
-
+<a>
 <img alt="Python" src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white" />
 <img alt="Java" src="https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white" />
 <img alt="R" src="https://img.shields.io/badge/r-%23276DC3.svg?&style=for-the-badge&logo=r&logoColor=white" />
@@ -79,7 +79,7 @@
 
 <img alt="Sublime Text" src="https://img.shields.io/badge/sublimetext%20-%23FF9800?style=for-the-badge&logo=Sublime-Text&logoColor=white" />
 <img alt="Asana" src="https://img.shields.io/badge/asana%20-%23273347?style=for-the-badge&logo=Asana&logoColor=white" />
-
+</a>
 
 ------
 
