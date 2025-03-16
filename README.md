@@ -4,8 +4,8 @@
 
 
   - Atualmente estou trabalhando em projetos que envolvem arquitetura e dados, separações de bases de dados, expurgo de tabelas, replicação, migração de dados., particionamento de tabelas e desnormalização.
-  - Estou aprendendo terraform, para automatizar a criação de infra.
-  - Converse comigo sobre **Projetos, Banco de dados, MySQ, SQL Server, Postgres, Cloud e Egenharia de dados**
+  - Estou aprendendo sobre: terraform, para automatizar a criação de infra, ferramentas de Engenharia de dados para auxiliar em migrações/movimentação de dados.
+  - Converse comigo sobre: **Projetos, Banco de dados, MySQ, SQL Server, Postgres, Cloud e Egenharia de dados**
 
 
 <p align="left">
