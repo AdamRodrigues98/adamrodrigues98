@@ -71,6 +71,8 @@
   <img alt="TravisCI" src="https://img.shields.io/badge/travisci%20-%232B2F33.svg?&style=for-the-badge&logo=travis&logoColor=white" />
 
   <img alt="SQL Server" src="https://img.shields.io/badge/sqlserver-%23CC2927.svg?&style=for-the-badge&logo=microsoft-sql-server&logoColor=white" />
+  <img alt="MySQL" src="https://img.shields.io/badge/mysql-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white" />
+
 
 
   
