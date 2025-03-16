@@ -142,7 +142,6 @@ class Bio(DBA):
         self.education = "Pós-Graduado em Cloud Computing"
         self.institution = "Pontifícia Universidade Católica de Minas Gerais"
         self.nationality = "Brasileiro"
-        self.position = "DBA"
         self.state = "Minas Gerais
 ```
 
