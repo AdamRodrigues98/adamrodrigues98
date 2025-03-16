@@ -45,11 +45,14 @@
 <img alt="Java" src="https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white" />
 <img alt="R" src="https://img.shields.io/badge/r-%23276DC3.svg?&style=for-the-badge&logo=r&logoColor=white" />
 <img alt='Mathworks' src="https://img.shields.io/badge/Mathworks%20-%230076A8.svg?&style=for-the-badge&logo=Mathworks&logoColor=white" />
+</a>
 &emsp;
+<a>
 <img alt="Pandas" src="https://img.shields.io/badge/pandas%20-%23150458.svg?&style=for-the-badge&logo=pandas&logoColor=white" />
 <img alt="NumPy" src="https://img.shields.io/badge/numpy%20-%23013243.svg?&style=for-the-badge&logo=numpy&logoColor=white" />
 <img alt="Keras" src="https://img.shields.io/badge/Keras%20-%23D00000.svg?&style=for-the-badge&logo=Keras&logoColor=white" />
 <img alt="Apache Spark" src="https://img.shields.io/badge/apachespark%20-%23E25A1C.svg?&style=for-the-badge&logo=Apache-Spark&logoColor=white" />
+</a> 
 &emsp;
 <img alt="Markdown" src="https://img.shields.io/badge/markdown-%23000000.svg?&style=for-the-badge&logo=markdown&logoColor=white" />
 <img alt="LaTeX" src="https://img.shields.io/badge/latex%20-%23008080.svg?&style=for-the-badge&logo=latex&logoColor=white" />
