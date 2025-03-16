@@ -77,3 +77,22 @@
 </table>
 
 ------
+
+<table>
+<caption>Adam Rodrigues</caption>
+<thead>
+<tr>
+<th colspan="2">Informações pessoais</th>
+</tr>
+</thead>
+<tbody>
+<tr><th scope='row'>Name</th><td>Adam Rodrigues</td></tr>
+<tr><th scope='row'>Nascimento</th><td><time datetime="2002-01-11 08:00">20 Janeiro, 1998</time></td></tr>
+<tr><th scope='row'>Escolaridade</th><td>Pós Graduado Cloud Computing</td></tr>
+<tr><th scope='row'>Instituição</th><td>Pontifícia Universidade Católica de Minas Gerais</td></tr>
+<tr><th scope='row'>Nascionalidade</th><td>Brasileiro</td></tr>
+<tr><th scope='row'>Cargo</th><td>DBA</td></tr>
+<tr><th scope='row'>Skills</th><td>SQL, Python</td></tr>
+<tr><th scope='row'>Estado</th><td>Minas Gerais</td></tr>
+</tbody>
+</table>
