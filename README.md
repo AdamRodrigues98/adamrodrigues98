@@ -57,14 +57,15 @@
   <img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white" />
   <img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white" />
 
-  <img alt="Google Search Console" src="https://img.shields.io/badge/googlesearchconsole%20-%23458CF5?style=for-the-badge&logo=Google-Search-Console&logoColor=white" />
-  <img alt="Google Analytics" src="https://img.shields.io/badge/googleanalytics%20-%23E37400?style=for-the-badge&logo=Google-Analytics&logoColor=white" />
-
   <img alt="Jenkins" src="https://img.shields.io/badge/jenkins-%232C5263.svg?&style=for-the-badge&logo=jenkins&logoColor=white" />
+  <img alt="Terraform" src="https://img.shields.io/badge/terraform-%844FBA.svg?&style=for-the-badge&logo=terraform&logoColor=white" />
 
   <img alt="SQL Server" src="https://img.shields.io/badge/sqlserver-%23CC2927.svg?&style=for-the-badge&logo=microsoft-sql-server&logoColor=white" />
   <img alt="MySQL" src="https://img.shields.io/badge/mysql-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white" />
+  <img alt="Postgres" src="https://img.shields.io/badge/postgres-%4169E1.svg?&style=for-the-badge&logo=postgres&logoColor=white" />
 
+  <img alt="Apache Superset" src="https://img.shields.io/badge/Apache%20Superset-%2320A6C9.svg?&style=for-the-badge&logo=apache-superset&logoColor=white" />
+  <img alt="Apache Airflow" src="https://img.shields.io/badge/Apache%20Airflow-%017CEE.svg?&style=for-the-badge&logo=apache-airflowt&logoColor=white" />
   <img alt="Apache Superset" src="https://img.shields.io/badge/Apache%20Superset-%2320A6C9.svg?&style=for-the-badge&logo=apache-superset&logoColor=white" />
 
 
