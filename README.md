@@ -130,3 +130,37 @@
 <tr><th scope='row'>Estado</th><td>Minas Gerais</td></tr>
 </tbody>
 </table>
+
+```python
+class DBA:
+    pass
+
+class Bio(DBA):
+    def __init__(self):
+        self.name = "Adam Rodrigues"
+        self.birthdate = "20 Janeiro, 1998"
+        self.education = "Pós-Graduado em Cloud Computing"
+        self.institution = "Pontifícia Universidade Católica de Minas Gerais"
+        self.nationality = "Brasileiro"
+        self.position = "DBA"
+        self.state = "Minas Gerais
+```
+
+```sql
+CREATE TABLE Skills (
+    id INT PRIMARY KEY,
+    category VARCHAR(50),
+    skill_name VARCHAR(100)
+);
+
+INSERT INTO Skills (category, skill_name) VALUES 
+    ('Linguagens', 'SQL'),
+    ('Linguagens', 'Python'),
+    ('Bancos de Dados', 'MySQL'),
+    ('Bancos de Dados', 'PostgreSQL'),
+    ('Bancos de Dados', 'SQL Server'),
+    ('Ferramentas', 'AWS'),
+    ('Ferramentas', 'Docker'),
+    ('Ferramentas', 'Jenkins'),
+    ('Ferramentas', 'Apache Superset');
+```
