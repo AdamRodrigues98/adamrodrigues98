@@ -3,8 +3,8 @@
 <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
 
-  - Atualmente estou trabalhando em projetos que envolvem arquitetura e dados, separações de bases de dados, expurgo de tabelas, replicação e migração de dados.
-  - Atualmente estou aprendendo mais sobre terraform, para automatizar a criação de infra.
+  - Atualmente estou trabalhando em projetos que envolvem arquitetura e dados, separações de bases de dados, expurgo de tabelas, replicação, migração de dados., particionamento de tabelas e desnormalização.
+  - Estou aprendendo mais sobre terraform, para automatizar a criação de infra.
   - Converse comigo sobre **Projetos, Banco de dados, MySQ, SQL Server, Postgres, Cloud**
 
 
@@ -83,7 +83,7 @@
 <table>
     <tr>
         <td style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">Banco de dados:</td>
-        <td><img height="40" src="https://skillicons.dev/icons?i=mysql,postgresql,mongodb,elasticsearch"/></td>
+        <td><img height="40" src="https://skillicons.dev/icons?i=mysql,postgresql,mongodb, redis"/></td>
     </tr>
     <tr>
         <td style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">DevOps:</td>
