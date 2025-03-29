@@ -1,0 +1,41 @@
+pipeline {
+    agent any
+    stages {
+        stage('Setup') {
+            steps {
+                script {
+                    def venvExists = sh(script: 'test -d relatorio_dba_read', returnStatus: true)
+                    if (venvExists == 0) {
+                        echo "Ambiente virtual encontrado, ativando..."
+                    } else {
+                        echo "Criando ambiente virtual..."
+                        sh 'python3 -m venv relatorio_dba_read'
+                    }
+                }
+            }
+        }
+        stage('Install Dependencies') {
+            steps {
+                script {
+                    sh 'source relatorio_dba_read/bin/activate && ./relatorio_dba_read/bin/python3 -m pip install --upgrade pip && ./relatorio_dba_read/bin/python3 -m pip install -r dbareplica/requirements.txt'
+                }
+            }
+        }        
+        stage('Connection') {
+            steps {
+                script {
+                    sh 'chmod +r dbareplica/replica.ini'
+                }
+            }
+        }
+        stage('Execution') {
+            steps {
+                script {
+                    echo "Executando o script Python..."
+                    sh 'source relatorio_dba_read/bin/activate && ./relatorio_dba_read/bin/python3 dbareplica/dba_read.py'
+                    //sh 'source relatorio_dba_read/bin/activate && ./relatorio_dba_read/bin/python3 dbareplica/dba_validacao.py'
+                }
+            }
+        }
+    }
+}
