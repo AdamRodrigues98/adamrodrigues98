@@ -1,0 +1,9 @@
+cryptography
+mysql-connector-python
+pymssql
+PyMySQL
+configparser
+zeep
+openpyxl
+pandas
+

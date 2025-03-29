@@ -1,0 +1,88 @@
+pipeline {
+    agent any
+    environment {
+        CHAVE_projeto_ad = credentials('CHAVE_projeto_ad') 
+        CHAVE_web_server1 = credentials('CHAVE_web_server1') 
+    }
+    stages {
+        stage('Setup') {
+            steps {
+                script {
+                    def venvExists = sh(script: 'test -d projeto_ad', returnStatus: true)
+                    if (venvExists == 0) {
+                        sh 'source projeto_ad/bin/activate'
+                    } else {
+                        sh 'python3 -m venv projeto_ad && source projeto_ad/bin/activate'
+                    }
+                    def pipExists = sh(script: 'pip --version', returnStatus: true)
+                    if (pipExists != 0) {
+                        sh 'curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py'
+                        sh './projeto_ad/bin/python3 get-pip.py'
+                    }
+                }
+            }
+        }
+        stage('Install Dependencies') {
+            steps {
+                script {
+                    sh './projeto_ad/bin/python3 -m pip install "urllib3<2.0"'
+                    sh './projeto_ad/bin/python3 -m pip install -r projeto_ad/requirements.txt'
+                }
+            }
+        }
+        stage('Permissions') {
+            steps {
+                script {
+                    sh 'chmod +r projeto_ad/web_server1_mysql.ini'
+                    sh 'chmod +r projeto_ad/projeto_ad.ini'
+                }
+            }
+        }
+        stage('Execution') {
+            steps {
+                script {
+                    def attempts = 0
+                    def maxAttempts = 3
+                    def success = false
+                    while (attempts < maxAttempts && !success) {
+                        try {
+                            sh './projeto_ad/bin/python3 projeto_ad/projeto_ad.py'
+                                success = true
+                            } catch (Exception e) {
+                            echo "A execução do script falhou. Tentando novamente... (${attempts + 1}/${maxAttempts})"
+                            attempts++
+                        }
+                    }
+                    if (success) {
+                        currentBuild.result = 'SUCCESS' 
+                    } else {
+                        error "Falha ao executar o script após ${maxAttempts} tentativas."
+                    }
+                    sh './projeto_ad/bin/python3 projeto_ad/web_server1_mysql.py' 
+                    def successEnvio = false
+                    try {
+                        timeout(time: 5, unit: 'MINUTES') {
+                            sh './projeto_ad/bin/python3 projeto_ad/envia_web_server1.py'
+                            successEnvio = true
+                         }
+                    } catch (Exception e) {
+                        echo "A execução do script de envio falhou, limite maximo de 5 minutos."
+                    }
+                    if (successEnvio) {
+                        try {
+                            sh './projeto_ad/bin/python3 projeto_ad/relatorio.py'
+                            sh './projeto_ad/bin/python3 projeto_ad/historico_web_server1.py'
+                        } catch (Exception e) {
+                            echo "A execução do script de relatório falhou."
+                        }
+                    } else {
+                        echo "O script de relatório não será executado porque o envio_web_server1.py falhou."
+                        currentBuild.result = 'FAILURE' 
+                    }
+                    
+                }
+            }
+        }
+
+    }
+}
