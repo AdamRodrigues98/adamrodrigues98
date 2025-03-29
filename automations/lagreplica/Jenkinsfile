@@ -1,0 +1,41 @@
+pipeline {
+    agent any
+    stages {
+        stage('Setup') {
+            steps {
+                script {
+                    def venvExists = sh(script: 'test -d lag_read', returnStatus: true)
+                    if (venvExists == 0) {
+                        echo "Ambiente virtual encontrado, ativando..."
+                    } else {
+                        echo "Criando ambiente virtual..."
+                        sh 'python3 -m venv lag_read'
+                    }
+                }
+            }
+        }
+        stage('Install Dependencies') {
+            steps {
+                script {
+                    sh 'source lag_read/bin/activate && ./lag_read/bin/python3 -m pip install --upgrade pip && ./lag_read/bin/python3 -m pip install -r lagreplica/requirements.txt'
+                }
+            }
+        }        
+        stage('Connection') {
+            steps {
+                script {
+                    sh 'chmod +r lagreplica/replica.ini'
+                }
+            }
+        }
+        stage('Execution') {
+            steps {
+                script {
+                    echo "Executando o script Python..."
+                    sh 'source lag_read/bin/activate && ./lag_read/bin/python3 lagreplica/dba_read.py'
+                    sh 'source lag_read/bin/activate && ./lag_read/bin/python3 lagreplica/dba_validacao.py'
+                }
+            }
+        }
+    }
+}
