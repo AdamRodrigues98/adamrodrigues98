@@ -1,0 +1,68 @@
+config = [
+   "dev": [
+        "environmentName": "dev",
+        "cname": "db.dev.adam.com",
+   ],
+   "qa": [
+        "environmentName": "qa",
+        "cname": "db.qa.adam.com",
+   ],
+   "qa-varejo": [
+        "environmentName": "qa-varejo",
+        "cname": "adam-qa-varejo-master.cavowrefpq34.us-east-1.rds.amazonaws.com",
+   ],
+   "awsAccountId": "9999999999999",
+   "awsCredentials": "ciuser-global",
+]
+
+
+pipeline {
+
+    agent any
+
+    parameters {
+        choice(name: 'AMBIENTE', choices: ['dev', 'qa'], description: 'Escolha o ambiente desejado')
+    }
+
+    environment { 
+        CNAME                       = getConfig(params.AMBIENTE, "cname")
+        DATABASE_CREDENTIAL         = credentials("adam-database-update-credential-${params.AMBIENTE == 'dev'? 'adamapu' : params.AMBIENTE}")
+        ENVIRONMENT_NAME            = getConfig(params.AMBIENTE, "environmentName")
+        AWS_CREDENTIALS             = getConfig(params.AMBIENTE, "awsCredentials")
+        AWS_ENVIRONMENT_ACCOUNT_ID  = getConfig(params.AMBIENTE, "awsAccountId")
+    }
+
+    stages {
+
+        stage('Create users') {
+            steps {
+            	withAWS(credentials: env.AWS_CREDENTIALS, roleAccount: "${AWS_ENVIRONMENT_ACCOUNT_ID}", role: "terraform", region: "us-east-1"){
+                    sh '''
+                        pip3 install -r database/create-users-scalability/requirements.txt
+                        python3 -u database/create-users-scalability/create-users-scalability.py
+                    '''
+                }
+            }
+        }
+    }
+
+    post {
+        success{
+            discordSend description: "${env.JOB_NAME} Pipeline Build ${params.AMBIENTE} - ${env.BUILD_NUMBER} Success ", link: env.BUILD_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: "${DISCORD_NOTIFIER_WEBHOOK}"
+        }
+        failure{
+            discordSend description: "${env.JOB_NAME} Pipeline Build ${params.AMBIENTE} - ${env.BUILD_NUMBER} FAILED ", link: env.BUILD_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: "${DISCORD_NOTIFIER_WEBHOOK}"
+        }
+    }
+
+}
+
+def getConfig(environment, key) {
+    if (config[environment][key]) {
+        return config[environment][key]
+    }
+    if (config[key]) {
+        return config[key]
+    }
+    return ""
+}
