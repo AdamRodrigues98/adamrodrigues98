@@ -584,9 +584,9 @@ release "pmm" uninstalled
 adam.rodrigues@ADAMPC:~$ kubectl delete pvc pmm-storage-pmm-0 -n observability
 persistentvolumeclaim "pmm-storage-pmm-0" deleted
 adam.rodrigues@ADAMPC:~$ helm install pmm percona/pmm -n observability
-Error: INSTALLATION FAILED: Unable to continue with install: Secret "pmm-secret" in namespace "observability" exists and cannot be imported into the current release: invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm"; annotation validation error: missing key "meta.helm.sh/release-name": must be set to "pmm"; annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "observability"
-adam.rodrigues@ADAMPC:~$ kubectl delete secret pmm-secret -n observability
-secret "pmm-secret" deleted
+Error: INSTALLATION FAILED: Unable to continue with install: ***** "pmm-*****" in namespace "observability" exists and cannot be imported into the current release: invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm"; annotation validation error: missing key "meta.helm.sh/release-name": must be set to "pmm"; annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "observability"
+adam.rodrigues@ADAMPC:~$ kubectl delete ***** pmm-***** -n observability
+***** "pmm-*****" deleted
 adam.rodrigues@ADAMPC:~$ helm install pmm percona/pmm -n observability
 NAME: pmm
 LAST DEPLOYED: Thu Aug  7 12:12:17 2025
@@ -624,7 +624,7 @@ INFO [08-07|16:16:32] Locking database                         logger=migrator
 INFO [08-07|16:16:32] Starting DB migrations                   logger=migrator
 INFO [08-07|16:16:32] migrations completed                     logger=migrator performed=0 skipped=644 duration=487.196µs
 INFO [08-07|16:16:32] Unlocking database                       logger=migrator
-INFO [08-07|16:16:32] Envelope encryption state                logger=secrets enabled=true current provider=secretKey.v1
+INFO [08-07|16:16:32] Envelope encryption state                logger=*****s enabled=true current provider=*****Key.v1
 
 Admin password changed successfully ✔
 
