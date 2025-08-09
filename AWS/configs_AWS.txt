@@ -1,0 +1,43 @@
+[profile adam-prd]
+role_arn = arn:aws:iam::999999999999:role/dba
+color = 8f0024
+
+[profile adam-dev]
+role_arn = arn:aws:iam::999999999999:role/dba
+color = ff4000
+
+[profile adam-qa]
+role_arn = arn:aws:iam::999999999999:role/dba
+color = ff4000
+
+[profile adam-internal]
+role_arn = arn:aws:iam::999999999999:role/dba
+color = ff4000
+
+[profile adam-Analytics]
+role_arn = arn:aws:iam::999999999999:role/dba
+color = ff4000
+
+[profile adam-prd]
+role_arn = arn:aws:iam::999999999999:role/terrafomr
+color = 008f4c
+
+[profile adam-dev]
+role_arn = arn:aws:iam::999999999999:role/terrafomr
+color = 008f4c
+
+[profile adam-qa]
+role_arn = arn:aws:iam::999999999999:role/terrafomr
+color = 008f4c
+
+[profile adam-internal]
+role_arn = arn:aws:iam::999999999999:role/terrafomr
+color = 008f4c
+
+[profile adam-Analytics]
+role_arn = arn:aws:iam::999999999999:role/terrafomr
+color = 008f4c
+
+[profile adam-talent]
+role_arn = arn:aws:iam::999999999999:role/dba
+color = 008f4c
