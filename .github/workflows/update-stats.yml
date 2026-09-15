@@ -35,7 +35,7 @@ jobs:
       - name: Gerar sequência de contribuições
         uses: zients/github-readme-streak-stats@v2
         with:
-          options: user=AdamRodrigues98&theme=darcula&disable_animations=true
+          options: user=AdamRodrigues98&theme=darcula&hide_border=true&background=00000000&disable_animations=true
           path: assets/github/streak.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -43,7 +43,7 @@ jobs:
         uses: maurodesouza/github-readme-activity-graph-action@v1
         with:
           username: AdamRodrigues98
-          options: bg_color=100f0f&color=a0a0a0&line=ffbf00&point=403e41&area=true&hide_border=true
+          options: bg_color=00000000&color=a0a0a0&line=ffbf00&point=403e41&area=true&hide_border=true
           output_path: assets/github/activity.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
