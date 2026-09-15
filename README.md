@@ -1,5 +1,5 @@
-<h1 align="center">Olá 👋, eu sou Adam Rodrigues</h1>
-<h3 align="center">Database Reliability Engineer Sr. · DBA · Data Engineer</h3>
+<h1 align="center">Adam Rodrigues</h1>
+<h3 align="center">Database Reliability Engineer & DBA Sr </h3>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/adam-rodrigues-067a54150/" target="_blank">
@@ -19,19 +19,57 @@
 
 ---
 
-## 🧑‍💻 Sobre mim
+## Sobre mim
 
-DBA com mais de **8 anos** em ambientes críticos de alta disponibilidade e grande volume. Atuo com **PostgreSQL, MySQL, SQL Server e MongoDB na AWS**, unindo performance tuning, práticas de **DBRE** (observabilidade, RCA e capacity planning) e plataformas analíticas com **Python, Airflow e Trino**.
+Com mais de **8 anos** em ambientes críticos de alta disponibilidade e grande volume. Atuo com **PostgreSQL, MySQL, SQL Server e MongoDB na AWS**, unindo performance tuning, práticas de **DBRE** (observabilidade, RCA e capacity planning) e plataformas analíticas com **Python, Airflow, Trino, Iceberg e Hive**.
 
-- 🔭 **Atualmente:** Database Reliability Engineer Sr. na **Nexti** — tuning de queries/índices/parâmetros, resposta a incidentes e War Rooms, automação de ETL/ELT e arquiteturas Data Lake / Lakehouse que reduzem carga no OLTP.
-- 🏗️ **Trabalhando em:** separação de bases, expurgo e particionamento de tabelas, replicação, migração de dados, desnormalização e construção de DW/Lakehouse.
-- 🌱 **Aprendendo:** Terraform e GitOps para automação de infraestrutura, além de ferramentas de Engenharia de Dados para movimentação e migração de grandes volumes.
-- 💬 **Fale comigo sobre:** Bancos de dados, SQL, MySQL, PostgreSQL, SQL Server, Cloud e Engenharia de Dados.
-- 📍 Matozinhos, MG — Brasil · 🗣️ Português nativo · Inglês B2 · Espanhol B2
+-  **Atualmente:** Database Reliability Engineer Sr. na **Nexti** — tuning de queries/índices/parâmetros, resposta a incidentes e War Rooms, automação de ETL/ELT e arquiteturas Data Lake / Lakehouse que reduzem carga no OLTP.
+-  **Trabalhando em:** Projetos de médio e longo prazo, com duração de alguns meses a vários anos. Iniciativas maiores são estruturadas em etapas e incorporadas ao roadmap, envolvendo separação de bases, expurgo e particionamento de grandes tabelas, replicação e migração de dados, desnormalização e construção de arquiteturas de DW e Lakehouse
+-  **Aprendendo:** Terraform e GitOps para automação de infraestrutura, além de ferramentas de Engenharia de Dados para movimentação e migração de grandes volumes.
+-  **Fale comigo sobre:** Bancos de dados, SQL, MySQL, PostgreSQL, SQL Server, Cloud e Engenharia de Dados.
+-  Matozinhos, MG — Brasil · Português nativo · Inglês B2 · Espanhol B2
 
 ---
 
-## 🛠️ Ferramentas e Skills
+## GitHub
+
+<p align="center">
+  <img height="165"
+       src="./assets/github/stats.svg"
+       alt="Estatísticas do GitHub" />
+
+  <img height="165"
+       src="./assets/github/languages.svg"
+       alt="Linguagens mais usadas" />
+</p>
+
+<p align="center">
+  <img src="./assets/github/streak.svg"
+       alt="Sequência de contribuições" />
+</p>
+
+<p align="center">
+  <img src="./assets/github/activity.svg"
+       alt="Gráfico de atividade" />
+</p>
+
+<p align="center">
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/AdamRodrigues98/AdamRodrigues98/pacman-output/galaga-contribution-graph-dark.svg?game=galaga">
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://raw.githubusercontent.com/AdamRodrigues98/AdamRodrigues98/pacman-output/galaga-contribution-graph.svg?game=galaga">
+    <img
+      alt="Galaga contribution graph"
+      src="https://raw.githubusercontent.com/AdamRodrigues98/AdamRodrigues98/pacman-output/galaga-contribution-graph.svg?game=galaga">
+  </picture>
+</p>
+
+---
+
+##  Ferramentas e Skills
 
 <table>
   <tr>
@@ -86,7 +124,7 @@ DBA com mais de **8 anos** em ambientes críticos de alta disponibilidade e gran
 
 ---
 
-## 📜 Certificações
+## Certificações
 
 | AWS | Microsoft Azure |
 | --- | --- |
@@ -97,7 +135,7 @@ DBA com mais de **8 anos** em ambientes críticos de alta disponibilidade e gran
 
 ---
 
-## 🎓 Formação
+## Formação
 
 | Curso | Instituição | Período |
 | --- | --- | --- |
@@ -105,30 +143,6 @@ DBA com mais de **8 anos** em ambientes críticos de alta disponibilidade e gran
 | Pós-graduação em Cloud Computing | PUC Minas | jun/2023 – dez/2024 |
 | Bacharelado em Sistemas de Informação | Faculdade Pitágoras | 2015 – 2018 |
 | Técnico em Programação | SENAI | 2012 – 2014 |
-
----
-
-## 📊 GitHub
-
-<p align="center">
-  <img height="165"
-       src="./assets/github/stats.svg"
-       alt="Estatísticas do GitHub" />
-
-  <img height="165"
-       src="./assets/github/languages.svg"
-       alt="Linguagens mais usadas" />
-</p>
-
-<p align="center">
-  <img src="./assets/github/streak.svg"
-       alt="Sequência de contribuições" />
-</p>
-
-<p align="center">
-  <img src="./assets/github/activity.svg"
-       alt="Gráfico de atividade" />
-</p>
 
 ---
 
