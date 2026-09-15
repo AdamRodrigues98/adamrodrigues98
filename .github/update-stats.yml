@@ -1,0 +1,59 @@
+name: Atualizar estatísticas do GitHub
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Criar diretório
+        run: mkdir -p assets/github
+
+      - name: Estatísticas
+        run: |
+          curl -fL \
+            "https://github-readme-stats.vercel.app/api?username=AdamRodrigues98&show_icons=true&count_private=true&theme=darcula&hide_border=true&hide=issues,contribs&bg_color=00000000" \
+            -o assets/github/stats.svg
+
+      - name: Linguagens
+        run: |
+          curl -fL \
+            "https://github-readme-stats.vercel.app/api/top-langs/?username=AdamRodrigues98&layout=compact&hide_border=true&theme=darcula&bg_color=00000000&langs_count=6&hide=jupyter%20notebook,tex,css,php" \
+            -o assets/github/languages.svg
+
+      - name: Streak
+        run: |
+          curl -fL \
+            "https://streak-stats.demolab.com?user=AdamRodrigues98&theme=darcula&hide_border=true&background=00000000" \
+            -o assets/github/streak.svg
+
+      - name: Activity Graph
+        run: |
+          curl -fL \
+            "https://github-readme-activity-graph.vercel.app/graph?username=AdamRodrigues98&bg_color=100f0f&color=a0a0a0&line=ffbf00&point=403e41&area=true&hide_border=true" \
+            -o assets/github/activity.svg
+
+      - name: Commit das estatísticas
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/github/
+
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração."
+            exit 0
+          fi
+
+          git commit -m "Atualiza estatísticas do GitHub"
+          git push

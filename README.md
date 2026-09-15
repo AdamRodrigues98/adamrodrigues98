@@ -111,16 +111,23 @@ DBA com mais de **8 anos** em ambientes críticos de alta disponibilidade e gran
 ## 📊 GitHub
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=AdamRodrigues98&show_icons=true&count_private=true&theme=darcula&hide_border=true&hide=issues,contribs&bg_color=00000000" alt="Estatísticas do GitHub" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AdamRodrigues98&layout=compact&hide_border=true&theme=darcula&bg_color=00000000&langs_count=6&hide=jupyter%20notebook,tex,css,php" alt="Linguagens mais usadas" />
+  <img height="165"
+       src="./assets/github/stats.svg"
+       alt="Estatísticas do GitHub" />
+
+  <img height="165"
+       src="./assets/github/languages.svg"
+       alt="Linguagens mais usadas" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=AdamRodrigues98&theme=darcula&hide_border=true&background=00000000" alt="Sequência de contribuições" />
+  <img src="./assets/github/streak.svg"
+       alt="Sequência de contribuições" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AdamRodrigues98&bg_color=100f0f&color=a0a0a0&line=ffbf00&point=403e41&area=true&hide_border=true" alt="Gráfico de atividade" />
+  <img src="./assets/github/activity.svg"
+       alt="Gráfico de atividade" />
 </p>
 
 ---
