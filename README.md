@@ -1,165 +1,174 @@
-# 🚀 Olá, eu sou Adam Rodrigues - DBA & Data Engineer 
-
-<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-
-
-  - Atualmente estou trabalhando em projetos que envolvem arquitetura e dados, separações de bases de dados, expurgo de tabelas, replicação, migração de dados, particionamento de tabelas, desnormalização, criação de DW e Lakehouse.
-  - Estou aprendendo sobre: terraform, para automatizar a criação de infra, ferramentas de Engenharia de dados para auxiliar em migrações/movimentação de dados.
-  - Converse comigo sobre: **Projetos, Banco de dados, MySQ, SQL Server, Postgres, Cloud e Egenharia de dados**
-
-
-<p align="left">
-<a href="https://www.linkedin.com/in/adam-rodrigues-067a54150/" target="blank"><i align="center" class="devicon-linkedin-plain colored" alt="Adam_Rodrigues" height="40" width="60" ></i>
-</a>
-</p>
-
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=AdamRodrigues98&label=Profile%20views&color=0e75b6&style=flat" alt="AdamRodrigues98" /> </p>
-
-<h3>Contato:</h3>
-
-<a href="https://www.linkedin.com/in/adam-rodrigues-067a54150"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="mailto:adamrodrigues98@gmail.com"><img src="https://img.shields.io/badge/gmail-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-
-
-------
+<h1 align="center">Olá 👋, eu sou Adam Rodrigues</h1>
+<h3 align="center">Database Reliability Engineer Sr. · DBA · Data Engineer</h3>
 
 <p align="center">
-  <img height="50%" width="auto" src ="https://github-readme-stats.vercel.app/api?username=AdamRodrigues98&show_icons=true&count_private=true&theme=darcula&hide_border=true&hide=issues,contribs&bg_color=00000000">
-  <img height="50%" width="auto" src ="https://github-readme-stats.vercel.app/api/top-langs/?username=AdamRodrigues98&layout=compact&hide_border=true&theme=darcula&bg_color=00000000&langs_count=6&hide=jupyter%20notebook,tex,css,php">
-  <img src ="https://github-readme-streak-stats.herokuapp.com?user=AdamRodrigues98&theme=darcula&hide_border=true&background=FFFFFF00">
-  <br>
-  <br>
- </p>
-
-
-<h3 align="left">Atividade:</h3>
-
-[![Ashutosh's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=AdamRodrigues98&bg_color=100f0f&color=a0a0a0&line=ffbf00&point=403e41&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-
-
-------
-<h3><u> Tecnologias </u></h3>
-
-<p align="center">
-  <img alt="Python" src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white" />
-  
-  <img alt="Pandas" src="https://img.shields.io/badge/pandas%20-%23150458.svg?&style=for-the-badge&logo=pandas&logoColor=white" />
-  <img alt="NumPy" src="https://img.shields.io/badge/numpy%20-%23013243.svg?&style=for-the-badge&logo=numpy&logoColor=white" />
-  <img alt="Apache Spark" src="https://img.shields.io/badge/apachespark%20-%23E25A1C.svg?&style=for-the-badge&logo=Apache-Spark&logoColor=white" />
-  <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter%20-%23F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white" />
-  
-  <img alt="Markdown" src="https://img.shields.io/badge/markdown-%23000000.svg?&style=for-the-badge&logo=markdown&logoColor=white" />
-  <img alt="Shell Script" src="https://img.shields.io/badge/shell_script%20-%23121011.svg?&style=for-the-badge&logo=gnu-bash&logoColor=white" />
-
-  <img alt="Docker" src="https://img.shields.io/badge/docker%20-%230db7ed.svg?&style=for-the-badge&logo=docker&logoColor=white" />
-  <img alt="Kubernetes" src="https://img.shields.io/badge/kubernetes%20-%23326ce5.svg?&style=for-the-badge&logo=kubernetes&logoColor=white" />
-
-  <img alt="Git" src="https://img.shields.io/badge/git%20-%23F05033.svg?&style=for-the-badge&logo=git&logoColor=white" />
-  <img alt="GitHub" src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white" />
-  <img alt="GitLab" src="https://img.shields.io/badge/gitlab%20-%23181717.svg?&style=for-the-badge&logo=gitlab&logoColor=white" />
-
-  <img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white" />
-  <img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white" />
-
-  <img alt="Jenkins" src="https://img.shields.io/badge/jenkins-%232C5263.svg?&style=for-the-badge&logo=jenkins&logoColor=white" />
-  <img alt="Terraform" src="https://img.shields.io/badge/terraform-%844FBA.svg?&style=for-the-badge&logo=terraform&logoColor=white" />
-
-  <img alt="SQL Server" src="https://img.shields.io/badge/sqlserver-%23CC2927.svg?&style=for-the-badge&logo=microsoft-sql-server&logoColor=white" />
-  <img alt="MySQL" src="https://img.shields.io/badge/mysql-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white" />
-  <img alt="Postgres" src="https://img.shields.io/badge/postgres-%4169E1.svg?&style=for-the-badge&logo=postgres&logoColor=white" />
-
-  <img alt="Apache Superset" src="https://img.shields.io/badge/Apache%20Superset-%2320A6C9.svg?&style=for-the-badge&logo=apache-superset&logoColor=white" />
-  <img alt="Apache Airflow" src="https://img.shields.io/badge/Apache%20Airflow-%017CEE.svg?&style=for-the-badge&logo=apache-airflowt&logoColor=white" />
-
-  <img alt="Aws" src="https://img.shields.io/badge/AWS%20-%FF9900.svg?&style=for-the-badge&logo=awst&logoColor=white" />
-  
+  <a href="https://www.linkedin.com/in/adam-rodrigues-067a54150/" target="_blank">
+    <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-%230A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="mailto:adamrodrigues98@gmail.com">
+    <img alt="Gmail" src="https://img.shields.io/badge/Gmail-%23EA4335.svg?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://github.com/AdamRodrigues98" target="_blank">
+    <img alt="GitHub" src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
 </p>
 
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=AdamRodrigues98&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
+</p>
 
-------
+---
 
-<h3 align="left">Ferramentas e Skills:</h3>
-<table>
-    <tr>
-        <td style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">Banco de dados:</td>
-        <td><img height="40" src="https://skillicons.dev/icons?i=mysql,postgresql,mongodb, redis"/></td>
-    </tr>
-    <tr>
-        <td style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">DevOps:</td>
-        <td><img height="40" src="https://skillicons.dev/icons?i=docker,kubernetes,gcp,terraform,jenkins"/></td>
-    </tr>
-    <tr>
-        <td style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">Cloud:</td>
-        <td><img height="40" src="https://skillicons.dev/icons?i=aws,azure,gcp"/></td>
-    </tr>
-    <tr>
-        <td style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">Controle de versão:</td>
-        <td><img height="40" src="https://skillicons.dev/icons?i=git,github,gitlab,bitbucket"/></td>
-    </tr>
-    <tr>
-        <td style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">Ides:</td>
-        <td><img height="40" src="https://skillicons.dev/icons?i=vscode,visualstudio,pycharm"/></td>
-    </tr>
-    <tr>
-        <td style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">Sistemas operacionais:</td>
-        <td><img height="40" src="https://skillicons.dev/icons?i=windows,ubuntu,debian"/></td>
-    </tr>
-     <tr>
-        <td style="font-weight: bold; padding-right: 10px; vertical-align: center; border: none;">Observabilidade:</td>
-        <td><img height="40" src="https://skillicons.dev/icons?i=grafana"/></td>
-    </tr>
-</table>
+## 🧑‍💻 Sobre mim
 
-------
+DBA com mais de **8 anos** em ambientes críticos de alta disponibilidade e grande volume. Atuo com **PostgreSQL, MySQL, SQL Server e MongoDB na AWS**, unindo performance tuning, práticas de **DBRE** (observabilidade, RCA e capacity planning) e plataformas analíticas com **Python, Airflow e Trino**.
+
+- 🔭 **Atualmente:** Database Reliability Engineer Sr. na **Nexti** — tuning de queries/índices/parâmetros, resposta a incidentes e War Rooms, automação de ETL/ELT e arquiteturas Data Lake / Lakehouse que reduzem carga no OLTP.
+- 🏗️ **Trabalhando em:** separação de bases, expurgo e particionamento de tabelas, replicação, migração de dados, desnormalização e construção de DW/Lakehouse.
+- 🌱 **Aprendendo:** Terraform e GitOps para automação de infraestrutura, além de ferramentas de Engenharia de Dados para movimentação e migração de grandes volumes.
+- 💬 **Fale comigo sobre:** Bancos de dados, SQL, MySQL, PostgreSQL, SQL Server, Cloud e Engenharia de Dados.
+- 📍 Matozinhos, MG — Brasil · 🗣️ Português nativo · Inglês B2 · Espanhol B2
+
+---
+
+## 🛠️ Ferramentas e Skills
 
 <table>
-<thead>
-<tr>
-<th colspan="2">Informações pessoais</th>
-</tr>
-</thead>
-<tbody>
-<tr><th scope='row'>Name</th><td>Adam Rodrigues</td></tr>
-<tr><th scope='row'>Nascimento</th><td><time datetime="2002-01-11 08:00">20 Janeiro, 1998</time></td></tr>
-<tr><th scope='row'>Escolaridade</th><td>Pós Graduado Cloud Computing</td></tr>
-<tr><th scope='row'>Instituição</th><td>Pontifícia Universidade Católica de Minas Gerais</td></tr>
-<tr><th scope='row'>Nascionalidade</th><td>Brasileiro</td></tr>
-<tr><th scope='row'>Cargo</th><td>DBA</td></tr>
-<tr><th scope='row'>Skills</th><td>SQL, Python</td></tr>
-<tr><th scope='row'>Estado</th><td>Minas Gerais</td></tr>
-</tbody>
+  <tr>
+    <td><b>Bancos de dados</b></td>
+    <td><img height="40" src="https://skillicons.dev/icons?i=mysql,postgresql,mongodb,redis,dynamodb" /></td>
+  </tr>
+  <tr>
+    <td><b>Linguagens</b></td>
+    <td><img height="40" src="https://skillicons.dev/icons?i=python,bash,js,md" /></td>
+  </tr>
+  <tr>
+    <td><b>Cloud</b></td>
+    <td><img height="40" src="https://skillicons.dev/icons?i=aws,azure,gcp" /></td>
+  </tr>
+  <tr>
+    <td><b>DevOps</b></td>
+    <td><img height="40" src="https://skillicons.dev/icons?i=docker,kubernetes,terraform,jenkins" /></td>
+  </tr>
+  <tr>
+    <td><b>Observabilidade</b></td>
+    <td><img height="40" src="https://skillicons.dev/icons?i=grafana,prometheus" /></td>
+  </tr>
+  <tr>
+    <td><b>Controle de versão</b></td>
+    <td><img height="40" src="https://skillicons.dev/icons?i=git,github,gitlab,bitbucket" /></td>
+  </tr>
+  <tr>
+    <td><b>IDEs</b></td>
+    <td><img height="40" src="https://skillicons.dev/icons?i=vscode,visualstudio,pycharm" /></td>
+  </tr>
+  <tr>
+    <td><b>Sistemas operacionais</b></td>
+    <td><img height="40" src="https://skillicons.dev/icons?i=windows,ubuntu,debian,linux" /></td>
+  </tr>
 </table>
+
+### Dados & Confiabilidade
+
+<p>
+  <img alt="Apache Airflow" src="https://img.shields.io/badge/Apache%20Airflow-%23017CEE.svg?style=for-the-badge&logo=apacheairflow&logoColor=white" />
+  <img alt="Trino" src="https://img.shields.io/badge/Trino-%23DD00A1.svg?style=for-the-badge&logo=trino&logoColor=white" />
+  <img alt="Apache Spark" src="https://img.shields.io/badge/Apache%20Spark-%23E25A1C.svg?style=for-the-badge&logo=apachespark&logoColor=white" />
+  <img alt="Apache Kafka" src="https://img.shields.io/badge/Apache%20Kafka-%23231F20.svg?style=for-the-badge&logo=apachekafka&logoColor=white" />
+  <img alt="Apache Superset" src="https://img.shields.io/badge/Apache%20Superset-%2320A6C9.svg?style=for-the-badge&logo=apachesuperset&logoColor=white" />
+  <img alt="Pandas" src="https://img.shields.io/badge/Pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" />
+  <img alt="NumPy" src="https://img.shields.io/badge/NumPy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white" />
+  <img alt="Datadog" src="https://img.shields.io/badge/Datadog-%23632CA6.svg?style=for-the-badge&logo=datadog&logoColor=white" />
+  <img alt="Argo CD" src="https://img.shields.io/badge/Argo%20CD-%23EF7B4D.svg?style=for-the-badge&logo=argo&logoColor=white" />
+  <img alt="Oracle" src="https://img.shields.io/badge/Oracle%20PL%2FSQL-%23F80000.svg?style=for-the-badge&logo=oracle&logoColor=white" />
+  <img alt="SQL Server" src="https://img.shields.io/badge/SQL%20Server-%23CC2927.svg?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" />
+</p>
+
+---
+
+## 📜 Certificações
+
+| AWS | Microsoft Azure |
+| --- | --- |
+| Solutions Architect – Associate | Azure Administrator Associate (AZ-104) |
+| Developer – Associate | Azure Database Administrator Associate (DP-300) |
+| Data Engineer – Associate | Azure Fundamentals (AZ-900) |
+| Cloud Practitioner | Azure Data Fundamentals (DP-900) |
+
+---
+
+## 🎓 Formação
+
+| Curso | Instituição | Período |
+| --- | --- | --- |
+| Pós-graduação em Engenharia de Dados | PUC Minas | jun/2025 – jun/2026 |
+| Pós-graduação em Cloud Computing | PUC Minas | jun/2023 – dez/2024 |
+| Bacharelado em Sistemas de Informação | Faculdade Pitágoras | 2015 – 2018 |
+| Técnico em Programação | SENAI | 2012 – 2014 |
+
+---
+
+## 📊 GitHub
+
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=AdamRodrigues98&show_icons=true&count_private=true&theme=darcula&hide_border=true&hide=issues,contribs&bg_color=00000000" alt="Estatísticas do GitHub" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AdamRodrigues98&layout=compact&hide_border=true&theme=darcula&bg_color=00000000&langs_count=6&hide=jupyter%20notebook,tex,css,php" alt="Linguagens mais usadas" />
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=AdamRodrigues98&theme=darcula&hide_border=true&background=00000000" alt="Sequência de contribuições" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AdamRodrigues98&bg_color=100f0f&color=a0a0a0&line=ffbf00&point=403e41&area=true&hide_border=true" alt="Gráfico de atividade" />
+</p>
+
+---
+
+<details>
+<summary> Bio em código</summary>
 
 ```python
-class DBA:
-    pass
+class DatabaseReliabilityEngineer:
+    def incident_response(self) -> str:
+        return "observabilidade -> RCA -> automação"
 
-class Bio(DBA):
+
+class Bio(DatabaseReliabilityEngineer):
     def __init__(self):
         self.name = "Adam Rodrigues"
-        self.birthdate = "20 Janeiro, 1998"
-        self.education = "Pós-Graduado em Cloud Computing"
-        self.institution = "Pontifícia Universidade Católica de Minas Gerais"
+        self.role = "Database Reliability Engineer Sr. / DBA"
+        self.birthdate = "20/01/1998"
+        self.education = "Pós-graduação em Engenharia de Dados - PUC Minas"
         self.nationality = "Brasileiro"
-        self.state = "Minas Gerais
+        self.state = "Minas Gerais"
+        self.stack = ["PostgreSQL", "MySQL", "SQL Server", "MongoDB",
+                      "Python", "Airflow", "Trino", "AWS"]
+
+    def __str__(self) -> str:
+        return f"{self.name} - {self.role} ({self.state})"
 ```
 
 ```sql
-CREATE TABLE Skills (
-    id INT PRIMARY KEY,
-    category VARCHAR(50),
-    skill_name VARCHAR(100)
+CREATE TABLE skills (
+    id          INT PRIMARY KEY,
+    category    VARCHAR(50),
+    skill_name  VARCHAR(100)
 );
 
-INSERT INTO Skills (category, skill_name) VALUES 
-    ('Linguagens', 'SQL'),
-    ('Linguagens', 'Python'),
-    ('Bancos de Dados', 'MySQL'),
-    ('Bancos de Dados', 'PostgreSQL'),
-    ('Bancos de Dados', 'SQL Server'),
-    ('Ferramentas', 'AWS'),
-    ('Ferramentas', 'Docker'),
-    ('Ferramentas', 'Jenkins'),
-    ('Ferramentas', 'Apache Superset');
+INSERT INTO skills (id, category, skill_name) VALUES
+    (1, 'Linguagens',      'SQL'),
+    (2, 'Linguagens',      'Python'),
+    (3, 'Bancos de Dados', 'MySQL'),
+    (4, 'Bancos de Dados', 'PostgreSQL'),
+    (5, 'Bancos de Dados', 'SQL Server'),
+    (6, 'Bancos de Dados', 'MongoDB'),
+    (7, 'Cloud',           'AWS'),
+    (8, 'Cloud',           'Azure'),
+    (9, 'Ferramentas',     'Docker'),
+   (10, 'Ferramentas',     'Kubernetes'),
+   (11, 'Ferramentas',     'Terraform'),
+   (12, 'Ferramentas',     'Airflow');
 ```
+
+</details>
