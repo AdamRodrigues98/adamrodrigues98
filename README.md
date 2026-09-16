@@ -9,11 +9,8 @@
     <source
       media="(prefers-color-scheme: light)"
       srcset="./assets/profile/header-light.svg">
-    <img
-      src="./assets/profile/header-light.svg"
-      width="640"
-      alt="Adam Rodrigues — Database Reliability Engineer & DBA Sr">
-  </picture>
+    <img src="./assets/profile/header-light.svg" 
+      width="50%" alt="Adam Rodrigues — Database Reliability Engineer & DBA SR">
   <p>
     <a href="https://www.linkedin.com/in/adam-rodrigues-067a54150/">
       <img
