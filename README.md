@@ -3,7 +3,7 @@
 <img align="right" src="./assets/profile/database.svg" width="40%" alt="App grava no primary, que replica para Databricks e lakehouse" />
 
 <div align="center">
-  <h1>Adam Rodrigues</h1>
+  <h1>Adam</h1>
   <h3>Database Reliability Engineer & DBA Sr</h3>
   <p >
     <a href="https://www.linkedin.com/in/adam-rodrigues-067a54150/" target="_blank">
@@ -15,8 +15,9 @@
     <a href="https://github.com/AdamRodrigues98" target="_blank">
       <img alt="GitHub" src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" />
     </a>
-    <a> <img src="https://komarev.com/ghpvc/?username=AdamRodrigues98&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
-    </a>
+    <p>     
+      <a> <img src="https://komarev.com/ghpvc/?username=AdamRodrigues98&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" /> </a>
+    </p> 
   </p>
 
 ---
