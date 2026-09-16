@@ -1,10 +1,9 @@
-
-<img align="left" src="./assets/profile/cloud-sre.svg" width="40%" alt="Cloud com observabilidade: alerta, RCA e automação" />
-<img align="right" src="./assets/profile/database.svg" width="40%" alt="App grava no primary, que replica para Databricks e lakehouse" />
+<img align="left" src="./assets/profile/latency-panel.svg" width="22%" alt="Painel de latência p99 com SLO e error budget" />
+<img align="right" src="./assets/profile/database-icon.svg" width="22%" alt="Database" />
 
 <div align="center">
   <h1>Adam</h1>
-  <h3>DBRE & DBA SR</h3>
+  <h3>Database Reliability Engineer & DBA SR</h3>
   <p >
     <a href="https://www.linkedin.com/in/adam-rodrigues-067a54150/" target="_blank">
       <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-%230A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
@@ -20,6 +19,8 @@
     </p> 
   </p>
 
+<br clear="all" />
+
 ---
 
 ## Sobre mim
@@ -27,6 +28,12 @@
 <p align="center">
   <img src="./assets/github/sobre-mim-att.svg" alt="Sobre mim: Database Reliability Engineer Sr." width="100%">
 </p>
+
+<img align="left" src="./assets/profile/cloud-sre.svg" width="50%" alt="Cloud com observabilidade: alerta, RCA e automação" />
+<img align="right" src="./assets/profile/database.svg" width="50%" alt="App grava no primary, que replica para Databricks e lakehouse" />
+
+<br clear="all" />
+<br clear="all" />
 
 ---
 
@@ -83,25 +90,28 @@
 ## GitHub
 
 <p align="center">
-  <img width="38%"
-       src="./assets/github/stats.svg"
-       alt="Estatísticas do GitHub" />
-
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github/stats-dark.svg">
+    <img width="38%" src="./assets/github/stats-light.svg" alt="Estatísticas do GitHub">
+  </picture>
 </p>
 
 <p align="center">
-  <img width="38%" 
-       src="./assets/github/streak.svg"
-       alt="Sequência de contribuições" />
-  <img width="38%"
-       src="./assets/github/languages.svg"
-       alt="Linguagens mais usadas" />    
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github/streak-dark.svg">
+    <img width="38%" src="./assets/github/streak-light.svg" alt="Sequência de contribuições">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github/languages-dark.svg">
+    <img width="38%" src="./assets/github/languages-light.svg" alt="Linguagens mais usadas">
+  </picture>
 </p>
 
 <p align="center">
-  <img src="./assets/github/activity.svg"
-       alt="Gráfico de atividade" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github/activity-dark.svg">
+    <img src="./assets/github/activity-light.svg" alt="Gráfico de atividade">
+  </picture>
 </p>
-
 
 ---
