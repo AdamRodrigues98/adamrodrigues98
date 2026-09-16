@@ -34,11 +34,11 @@
   <img
     src="./assets/github/skills-terminal.svg"
     alt="Adam Rodrigues - Skills Terminal"
-    width="80%" />
+    width="100%" />
   <img
     src="./assets/github/bio-vscode.svg"
     alt="Bio de Adam Rodrigues em código"
-    width="80%" />
+    width="100%" />
 </p>
 
 <table width="100%">
