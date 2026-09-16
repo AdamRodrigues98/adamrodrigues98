@@ -2,22 +2,43 @@
 <img align="right" src="./assets/profile/database-icon.svg" width="22%" alt="Database" />
 
 <div align="center">
-  <h1>Adam</h1>
-  <h3>Database Reliability Engineer & DBA SR</h3>
-  <p >
-    <a href="https://www.linkedin.com/in/adam-rodrigues-067a54150/" target="_blank">
-      <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-%230A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="./assets/profile/header-dark.svg">
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="./assets/profile/header-light.svg">
+    <img
+      src="./assets/profile/header-light.svg"
+      width="640"
+      alt="Adam Rodrigues — Database Reliability Engineer & DBA Sr">
+  </picture>
+  <p>
+    <a href="https://www.linkedin.com/in/adam-rodrigues-067a54150/">
+      <img
+        alt="LinkedIn"
+        src="https://img.shields.io/badge/LinkedIn-%230A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
     </a>
+    &nbsp;
     <a href="mailto:adamrodrigues98@gmail.com">
-      <img alt="Gmail" src="https://img.shields.io/badge/Gmail-%23EA4335.svg?style=for-the-badge&logo=gmail&logoColor=white" />
+      <img
+        alt="Gmail"
+        src="https://img.shields.io/badge/Gmail-%23EA4335.svg?style=for-the-badge&logo=gmail&logoColor=white" />
     </a>
-    <a href="https://github.com/AdamRodrigues98" target="_blank">
-      <img alt="GitHub" src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" />
+    &nbsp;
+    <a href="https://github.com/AdamRodrigues98">
+      <img
+        alt="GitHub"
+        src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" />
     </a>
-    <p>     
-      <a> <img src="https://komarev.com/ghpvc/?username=AdamRodrigues98&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" /> </a>
-    </p> 
   </p>
+  <p>
+    <img
+      src="https://komarev.com/ghpvc/?username=AdamRodrigues98&label=Profile%20views&color=0e75b6&style=flat"
+      alt="Profile views" />
+  </p>
+</div>
 
 <br clear="all" />
 
@@ -29,8 +50,17 @@
   <img src="./assets/github/sobre-mim-att.svg" alt="Sobre mim: Database Reliability Engineer Sr." width="100%">
 </p>
 
-<img align="left" src="./assets/profile/cloud-sre.svg" width="50%" alt="Cloud com observabilidade: alerta, RCA e automação" />
-<img align="right" src="./assets/profile/database.svg" width="50%" alt="App grava no primary, que replica para Databricks e lakehouse" />
+### Data Flow
+
+<p align="center">
+  <img src="./assets/profile/database.svg" width="100%" alt="App grava no primary, que replica para Databricks e lakehouse" />
+</p>
+
+### Observability
+<p align="center">
+  <img src="./assets/profile/cloud-sre.svg" width="100%" alt="Cloud com observabilidade: alerta, RCA e automação" />
+</p>
+
 
 <br clear="all" />
 <br clear="all" />
