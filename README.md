@@ -25,7 +25,7 @@
 ## Sobre mim
 
 <p align="center">
-  <img src="./assets/github/sobre-mim.svg" alt="Sobre mim: Database Reliability Engineer Sr." width="100%">
+  <img src="./assets/github/sobre-mimm.svg" alt="Sobre mim: Database Reliability Engineer Sr." width="100%">
 </p>
 
 ---
