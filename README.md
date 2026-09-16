@@ -4,7 +4,7 @@
 
 <div align="center">
   <h1>Adam</h1>
-  <h3>Database Reliability Engineer & DBA Sr</h3>
+  <h3>DBRE & DBA SR</h3>
   <p >
     <a href="https://www.linkedin.com/in/adam-rodrigues-067a54150/" target="_blank">
       <img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-%230A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
@@ -25,7 +25,7 @@
 ## Sobre mim
 
 <p align="center">
-  <img src="./assets/github/sobre-mim.svg" alt="Sobre mim: Database Reliability Engineer Sr." width="100%">
+  <img src="./assets/github/sobre-mim-att.svg" alt="Sobre mim: Database Reliability Engineer Sr." width="100%">
 </p>
 
 ---
