@@ -8,6 +8,11 @@ on:
 permissions:
   contents: write
 
+env:
+  USER: AdamRodrigues98
+  DARK: title_color=58a6ff&text_color=c9d1d9&icon_color=58a6ff&ring_color=58a6ff&bg_color=00000000&hide_border=true
+  LIGHT: title_color=0969da&text_color=1f2328&icon_color=0969da&ring_color=0969da&bg_color=00000000&hide_border=true
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -16,48 +21,76 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Gerar estatísticas
+      - name: Stats (escuro)
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: stats
-          options: username=AdamRodrigues98&show_icons=true&count_private=true&theme=darcula&hide_border=true&hide=issues,contribs&bg_color=00000000
-          path: assets/github/stats.svg
+          options: username=${{ env.USER }}&show_icons=true&count_private=true&hide=issues,contribs&${{ env.DARK }}
+          path: assets/github/stats-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Gerar linguagens
+      - name: Stats (claro)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ env.USER }}&show_icons=true&count_private=true&hide=issues,contribs&${{ env.LIGHT }}
+          path: assets/github/stats-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Linguagens (escuro)
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: top-langs
-          options: username=AdamRodrigues98&layout=compact&hide_border=true&theme=darcula&bg_color=00000000&langs_count=6&hide=jupyter%20notebook,tex,css,php
-          path: assets/github/languages.svg
+          options: username=${{ env.USER }}&layout=compact&langs_count=6&hide=jupyter%20notebook,tex,css,php&${{ env.DARK }}
+          path: assets/github/languages-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Gerar sequência de contribuições
+      - name: Linguagens (claro)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ env.USER }}&layout=compact&langs_count=6&hide=jupyter%20notebook,tex,css,php&${{ env.LIGHT }}
+          path: assets/github/languages-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Streak (escuro)
         uses: zients/github-readme-streak-stats@v2
         with:
-          options: user=AdamRodrigues98&theme=darcula&hide_border=true&background=00000000&disable_animations=true
-          path: assets/github/streak.svg
+          options: user=${{ env.USER }}&hide_border=true&disable_animations=true&background=00000000&stroke=30363d&ring=58a6ff&fire=ffa657&currStreakNum=c9d1d9&sideNums=c9d1d9&currStreakLabel=58a6ff&sideLabels=8b949e&dates=8b949e
+          path: assets/github/streak-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Gerar gráfico de atividade
+      - name: Streak (claro)
+        uses: zients/github-readme-streak-stats@v2
+        with:
+          options: user=${{ env.USER }}&hide_border=true&disable_animations=true&background=00000000&stroke=d0d7de&ring=0969da&fire=fb8f44&currStreakNum=1f2328&sideNums=1f2328&currStreakLabel=0969da&sideLabels=57606a&dates=57606a
+          path: assets/github/streak-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Atividade (escuro)
         uses: maurodesouza/github-readme-activity-graph-action@v1
         with:
-          username: AdamRodrigues98
-          options: bg_color=00000000&color=a0a0a0&line=ffbf00&point=403e41&area=true&hide_border=true
-          output_path: assets/github/activity.svg
+          username: ${{ env.USER }}
+          options: bg_color=00000000&color=c9d1d9&title_color=58a6ff&line=58a6ff&point=c9d1d9&area=true&area_color=58a6ff&hide_border=true
+          output_path: assets/github/activity-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Atividade (claro)
+        uses: maurodesouza/github-readme-activity-graph-action@v1
+        with:
+          username: ${{ env.USER }}
+          options: bg_color=00000000&color=1f2328&title_color=0969da&line=0969da&point=1f2328&area=true&area_color=0969da&hide_border=true
+          output_path: assets/github/activity-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit das estatísticas
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           git add assets/github/*.svg
-
           if git diff --cached --quiet; then
             echo "Nenhuma alteração nas estatísticas."
             exit 0
           fi
-
           git commit -m "Atualiza estatísticas do GitHub"
           git push

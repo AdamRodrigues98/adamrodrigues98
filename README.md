@@ -90,25 +90,28 @@
 ## GitHub
 
 <p align="center">
-  <img width="38%"
-       src="./assets/github/stats.svg"
-       alt="Estatísticas do GitHub" />
-
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github/stats-dark.svg">
+    <img width="38%" src="./assets/github/stats-light.svg" alt="Estatísticas do GitHub">
+  </picture>
 </p>
 
 <p align="center">
-  <img width="38%" 
-       src="./assets/github/streak.svg"
-       alt="Sequência de contribuições" />
-  <img width="38%"
-       src="./assets/github/languages.svg"
-       alt="Linguagens mais usadas" />    
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github/streak-dark.svg">
+    <img width="38%" src="./assets/github/streak-light.svg" alt="Sequência de contribuições">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github/languages-dark.svg">
+    <img width="38%" src="./assets/github/languages-light.svg" alt="Linguagens mais usadas">
+  </picture>
 </p>
 
 <p align="center">
-  <img src="./assets/github/activity.svg"
-       alt="Gráfico de atividade" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github/activity-dark.svg">
+    <img src="./assets/github/activity-light.svg" alt="Gráfico de atividade">
+  </picture>
 </p>
-
 
 ---
