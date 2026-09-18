@@ -1,41 +1,20 @@
+<img align="left" src="./assets/profile/spacer.svg" width="22%" alt="" />
 <img align="right" src="./assets/profile/database-icon.svg" width="22%" alt="Database" />
 
 <div align="center">
   <picture>
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="./assets/profile/header-dark.svg">
-    <source
-      media="(prefers-color-scheme: light)"
-      srcset="./assets/profile/header-light.svg">
-    <img src="./assets/profile/header-light.svg" 
-      width="50%" alt="Adam Rodrigues — Database Reliability Engineer & DBA SR">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/profile/header-dark.svg">
+    <img src="./assets/profile/header-light.svg" width="50%" alt="Adam Rodrigues — Database Reliability Engineer & DBA SR">
+  </picture>
   <p>
-    <a href="https://www.linkedin.com/in/adam-rodrigues-067a54150/">
-      <img
-        alt="LinkedIn"
-        src="https://img.shields.io/badge/LinkedIn-%230A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" />
-    </a>
-    &nbsp;
-    <a href="mailto:adamrodrigues98@gmail.com">
-      <img
-        alt="Gmail"
-        src="https://img.shields.io/badge/Gmail-%23EA4335.svg?style=for-the-badge&logo=gmail&logoColor=white" />
-    </a>
-    &nbsp;
-    <a href="https://github.com/AdamRodrigues98">
-      <img
-        alt="GitHub"
-        src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" />
-    </a>
+    <a href="https://www.linkedin.com/in/adam-rodrigues-067a54150/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-%230A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;<a href="mailto:adamrodrigues98@gmail.com"><img alt="Gmail" src="https://img.shields.io/badge/Gmail-%23EA4335.svg?style=for-the-badge&logo=gmail&logoColor=white" /></a>&nbsp;<a href="https://github.com/AdamRodrigues98"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" /></a>
   </p>
   <p>
-    <img
-      src="https://komarev.com/ghpvc/?username=AdamRodrigues98&label=Profile%20views&color=0e75b6&style=flat"
-      alt="Profile views" />
+    <img src="https://komarev.com/ghpvc/?username=AdamRodrigues98&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
   </p>
 </div>
 
+<br clear="all" />
 <br clear="all" />
 
 ---
