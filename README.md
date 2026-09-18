@@ -1,4 +1,4 @@
-<img align="left" src="./assets/profile/spacer.svg" width="22%" alt="ESQUERDA" />
+<img align="left" src="./assets/profile/spacer.svg" width="22%" alt="" />
 <img align="right" src="./assets/profile/database-icon.svg" width="22%" alt="Database" />
 
 <div align="center">
@@ -13,6 +13,8 @@
     <img src="https://komarev.com/ghpvc/?username=AdamRodrigues98&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
   </p>
 </div>
+
+<br clear="all" />
 
 <br clear="all" />
 <br clear="all" />
