@@ -1,4 +1,4 @@
-<img align="left" src="./assets/profile/spacer.svg" width="22%" alt="" />
+<img align="left" src="./assets/profile/database-icon.svg" width="22%" height="1" alt="" />
 <img align="right" src="./assets/profile/database-icon.svg" width="22%" alt="Database" />
 
 <div align="center">
