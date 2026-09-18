@@ -1,4 +1,3 @@
-<img align="left" src="./assets/profile/latency-panel.svg" width="22%" alt="Painel de latência p99 com SLO e error budget" />
 <img align="right" src="./assets/profile/database-icon.svg" width="22%" alt="Database" />
 
 <div align="center">
@@ -41,11 +40,31 @@
 
 ---
 
-## Sobre mim
+# Sobre mim
 
 <p align="center">
   <img src="./assets/github/sobre-mim-att.svg" alt="Sobre mim: Database Reliability Engineer Sr." width="100%">
 </p>
+
+<br clear="all" />
+<br clear="all" />
+
+---
+
+
+## Skills
+<p align="center">
+  <img
+    src="./assets/github/skills-terminal.svg"
+    alt="Adam Rodrigues - Skills Terminal"
+    width="100%" />
+  <img
+    src="./assets/github/bio-vscode.svg"
+    alt="Bio de Adam Rodrigues em código"
+    width="100%" />
+</p>
+
+---
 
 ### Data Flow
 
@@ -64,51 +83,99 @@
 
 ---
 
-## Skills
-<p align="center">
-  <img
-    src="./assets/github/skills-terminal.svg"
-    alt="Adam Rodrigues - Skills Terminal"
-    width="100%" />
-  <img
-    src="./assets/github/bio-vscode.svg"
-    alt="Bio de Adam Rodrigues em código"
-    width="100%" />
-</p>
+## Ferramentas
 
 <table width="100%">
 <tr>
-<td valign="top" width="40%">
-<h2>Ferramentas</h2>
-<table width="100%">
-<tr><td><b>Bancos de dados</b></td><td><img height="32" src="https://skillicons.dev/icons?i=mysql,postgresql,mongodb,redis,dynamodb" /></td></tr>
-<tr><td><b>Linguagens</b></td><td><img height="32" src="https://skillicons.dev/icons?i=python,bash,js,md" /></td></tr>
-<tr><td><b>Cloud</b></td><td><img height="32" src="https://skillicons.dev/icons?i=aws,azure,gcp" /></td></tr>
-<tr><td><b>DevOps</b></td><td><img height="32" src="https://skillicons.dev/icons?i=docker,kubernetes,terraform,jenkins" /></td></tr>
-<tr><td><b>Observabilidade</b></td><td><img height="32" src="https://skillicons.dev/icons?i=grafana,prometheus" /></td></tr>
-<tr><td><b>Controle de versão</b></td><td><img height="32" src="https://skillicons.dev/icons?i=git,github,gitlab,bitbucket" /></td></tr>
-<tr><td><b>IDEs</b></td><td><img height="32" src="https://skillicons.dev/icons?i=vscode,visualstudio,pycharm" /></td></tr>
-<tr><td><b>Sistemas operacionais</b></td><td><img height="32" src="https://skillicons.dev/icons?i=windows,ubuntu,debian,linux" /></td></tr>
+<td><b>Bancos de dados</b></td>
+<td><img height="32" src="https://skillicons.dev/icons?i=mysql,postgresql,mongodb,redis,dynamodb" /></td>
+</tr>
+<tr>
+<td><b>Linguagens</b></td>
+<td><img height="32" src="https://skillicons.dev/icons?i=python,bash,js,md" /></td>
+</tr>
+<tr>
+<td><b>Cloud</b></td>
+<td><img height="32" src="https://skillicons.dev/icons?i=aws,azure,gcp" /></td>
+</tr>
+<tr>
+<td><b>DevOps</b></td>
+<td><img height="32" src="https://skillicons.dev/icons?i=docker,kubernetes,terraform,jenkins" /></td>
+</tr>
+<tr>
+<td><b>Observabilidade</b></td>
+<td><img height="32" src="https://skillicons.dev/icons?i=grafana,prometheus" /></td>
+</tr>
+<tr>
+<td><b>Controle de versão</b></td>
+<td><img height="32" src="https://skillicons.dev/icons?i=git,github,gitlab,bitbucket" /></td>
+</tr>
+<tr>
+<td><b>IDEs</b></td>
+<td><img height="32" src="https://skillicons.dev/icons?i=vscode,visualstudio,pycharm" /></td>
+</tr>
+<tr>
+<td><b>Sistemas operacionais</b></td>
+<td><img height="32" src="https://skillicons.dev/icons?i=windows,ubuntu,debian,linux" /></td>
+</tr>
 </table>
-</td>
-<td valign="top" width="60%">
-<h2>Certificações</h2>
+
+<br>
+
+## Certificações
+
 <table width="100%">
-<tr><th>AWS</th><th>Microsoft Azure</th></tr>
-<tr><td>Solutions Architect – Associate</td><td>Azure Administrator Associate (AZ-104)</td></tr>
-<tr><td>Developer – Associate</td><td>Azure Database Administrator Associate (DP-300)</td></tr>
-<tr><td>Data Engineer – Associate</td><td>Azure Fundamentals (AZ-900)</td></tr>
-<tr><td>Cloud Practitioner</td><td>Azure Data Fundamentals (DP-900)</td></tr>
+<tr>
+<th>AWS</th>
+<th>Microsoft Azure</th>
+</tr>
+<tr>
+<td>Solutions Architect – Associate</td>
+<td>Azure Administrator Associate (AZ-104)</td>
+</tr>
+<tr>
+<td>Developer – Associate</td>
+<td>Azure Database Administrator Associate (DP-300)</td>
+</tr>
+<tr>
+<td>Data Engineer – Associate</td>
+<td>Azure Fundamentals (AZ-900)</td>
+</tr>
+<tr>
+<td>Cloud Practitioner</td>
+<td>Azure Data Fundamentals (DP-900)</td>
+</tr>
 </table>
-<h2>Formação</h2>
+
+<br>
+
+## Formação
+
 <table width="100%">
-<tr><th>Curso</th><th>Instituição</th><th>Período</th></tr>
-<tr><td>Pós-graduação em Engenharia de Dados</td><td>PUC Minas</td><td>jun/2025 – jun/2026</td></tr>
-<tr><td>Pós-graduação em Cloud Computing</td><td>PUC Minas</td><td>jun/2023 – dez/2024</td></tr>
-<tr><td>Bacharelado em Sistemas de Informação</td><td>Faculdade Pitágoras</td><td>2015 – 2018</td></tr>
-<tr><td>Técnico em Programação</td><td>SENAI</td><td>2012 – 2014</td></tr>
-</table>
-</td>
+<tr>
+<th>Curso</th>
+<th>Instituição</th>
+<th>Período</th>
+</tr>
+<tr>
+<td>Pós-graduação em Engenharia de Dados</td>
+<td>PUC Minas</td>
+<td>jun/2025 – jun/2026</td>
+</tr>
+<tr>
+<td>Pós-graduação em Cloud Computing</td>
+<td>PUC Minas</td>
+<td>jun/2023 – dez/2024</td>
+</tr>
+<tr>
+<td>Bacharelado em Sistemas de Informação</td>
+<td>Faculdade Pitágoras</td>
+<td>2015 – 2018</td>
+</tr>
+<tr>
+<td>Técnico em Programação</td>
+<td>SENAI</td>
+<td>2012 – 2014</td>
 </tr>
 </table>
 
