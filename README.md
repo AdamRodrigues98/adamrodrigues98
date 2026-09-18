@@ -1,4 +1,4 @@
-<img align="left" src="./assets/profile/spacer.svg" width="22%" alt="" />
+<img align="left" src="./assets/profile/spacer.svg" width="22%" alt="ESQUERDA" />
 <img align="right" src="./assets/profile/database-icon.svg" width="22%" alt="Database" />
 
 <div align="center">
@@ -7,14 +7,14 @@
     <img src="./assets/profile/header-light.svg" width="50%" alt="Adam Rodrigues — Database Reliability Engineer & DBA SR">
   </picture>
   <p align="center">
+    <img align="left" src="./assets/profile/spacer.svg" width="22%" alt="ESQUERDA" />
     <a href="https://www.linkedin.com/in/adam-rodrigues-067a54150/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-%230A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;<a href="mailto:adamrodrigues98@gmail.com"><img alt="Gmail" src="https://img.shields.io/badge/Gmail-%23EA4335.svg?style=for-the-badge&logo=gmail&logoColor=white" /></a>&nbsp;<a href="https://github.com/AdamRodrigues98"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" /></a>
   </p>
   <p align="center">
+    <img align="left" src="./assets/profile/spacer.svg" width="22%" alt="ESQUERDA" />
     <img src="https://komarev.com/ghpvc/?username=AdamRodrigues98&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
   </p>
 </div>
-
-<br clear="all" />
 
 <br clear="all" />
 <br clear="all" />
