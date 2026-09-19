@@ -1,0 +1,280 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1210" height="800" viewBox="0 0 1210 800" role="img" aria-label="Top SQL (25)">
+<style>
+    .card { fill: #ffffff; stroke: #d0d7de; }
+    .title { font: 600 16px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #16191f; }
+    .subtitle { font: 400 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #5f6b7a; }
+    .axis { font: 400 11px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #5f6b7a; }
+    .legend { font: 400 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #16191f; }
+    .grid { stroke: #e9ebed; stroke-width: 1; }
+    .base { stroke: #8d99a8; stroke-width: 1; }
+    .limit { font: 600 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .hdr { font: 600 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #16191f; }
+    .cell { font: 400 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #16191f; }
+    .sql { font: 400 11.5px SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; fill: #16191f; }
+    .val { font: 400 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #16191f; }
+    .tag { font: 600 10.5px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #ffffff; }
+    .row { stroke: #e9ebed; }
+    .refline { stroke: #5f6b7a; }
+    .hl { fill: #fff4e5; }
+    .hlbox { fill: #fff4e5; stroke: #f0b35a; }
+    @media (prefers-color-scheme: dark) {
+      .card { fill: #0d1117; stroke: #30363d; }
+      .title, .legend, .hdr, .cell, .sql, .val { fill: #e6edf3; }
+      .subtitle, .axis { fill: #8b949e; }
+      .grid, .row { stroke: #21262d; }
+      .base { stroke: #484f58; }
+      .refline { stroke: #8b949e; }
+      .hl { fill: #3b2e1a; }
+      .hlbox { fill: #3b2e1a; stroke: #d29922; }
+    }
+    .draw { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 2.6s ease-out forwards; }
+    .fade { opacity: 0; animation: fade 1.2s ease-out 1.4s forwards; }
+    .fadein { opacity: 0; animation: fade .6s ease-out forwards; }
+    .growy { transform-box: fill-box; transform-origin: 50% 100%; transform: scaleY(0); animation: growy .6s ease-out forwards; }
+    .growx { transform-box: fill-box; transform-origin: 0% 50%; transform: scaleX(0); animation: growx .8s ease-out forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes fade { to { opacity: 1; } }
+    @keyframes growy { to { transform: scaleY(1); } }
+    @keyframes growx { to { transform: scaleX(1); } }
+    @media (prefers-reduced-motion: reduce) {
+      .draw { animation: none; stroke-dashoffset: 0; }
+      .fade, .fadein { animation: none; opacity: 1; }
+      .growy, .growx { animation: none; transform: none; }
+    }
+</style>
+<rect class="card" x="0.5" y="0.5" width="1209" height="799" rx="10"/>
+<text class="title" x="24" y="32">Top SQL (25)</text>
+<text class="subtitle" x="24" y="52">empresa1-primary-8-read  |  21/07/2026 06:00 às 19:00  |  20 primeiras linhas</text>
+<text class="hdr" x="24" y="82">Load by waits (AAS)</text>
+<text class="hdr" x="330" y="82">SQL statements</text>
+<text class="hdr" x="980" y="82">Domínio</text>
+<text class="hdr" x="1120" y="82">Calls/sec</text>
+<line class="base" x1="16" y1="92" x2="1194" y2="92"/>
+<g class="fadein" style="animation-delay:0.15s">
+<line class="row" x1="16" y1="130" x2="1194" y2="130"/>
+<g class="growx" style="animation-delay:0.25s">
+<rect x="24.0" y="104.0" width="240.0" height="18" fill="#8e63c7"/>
+</g>
+<text class="val" x="272.0" y="117.0">0.75</text>
+<text class="sql" x="330" y="117.0">SELECT `evl`.`member_id`, `evl`.`event_date`, `evl`.`reference_date` ...</text>
+<rect x="980" y="103.0" width="93" height="20" rx="10" fill="#2e8540"/>
+<text class="tag" x="1026.5" y="117.0" text-anchor="middle">Eventos/HCM</text>
+<text class="cell" x="1120" y="117.0">0.01</text>
+</g>
+<g class="fadein" style="animation-delay:0.22s">
+<line class="row" x1="16" y1="164" x2="1194" y2="164"/>
+<g class="growx" style="animation-delay:0.32s">
+<rect x="24.0" y="138.0" width="139.7" height="18" fill="#8e63c7"/>
+<rect x="163.7" y="138.0" width="4.3" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="176.0" y="151.0">0.45</text>
+<text class="sql" x="330" y="151.0">SELECT `act`.`reference_date` AS `referenceDate`, `act`.`member_id` AS `memb...</text>
+<rect x="980" y="137.0" width="86" height="20" rx="10" fill="#1f5fbf"/>
+<text class="tag" x="1023.0" y="151.0" text-anchor="middle">Atividades</text>
+<text class="cell" x="1120" y="151.0">0.22</text>
+</g>
+<g class="fadein" style="animation-delay:0.29s">
+<line class="row" x1="16" y1="198" x2="1194" y2="198"/>
+<g class="growx" style="animation-delay:0.39s">
+<rect x="24.0" y="172.0" width="99.2" height="18" fill="#8e63c7"/>
+</g>
+<text class="val" x="131.2" y="185.0">0.31</text>
+<text class="sql" x="330" y="185.0">SELECT `evl`.`member_id` AS `member_id`, `au`.`name` AS `app_user_adjust`...</text>
+<rect x="980" y="171.0" width="93" height="20" rx="10" fill="#2e8540"/>
+<text class="tag" x="1026.5" y="185.0" text-anchor="middle">Eventos/HCM</text>
+<text class="cell" x="1120" y="185.0">0.00</text>
+</g>
+<g class="fadein" style="animation-delay:0.36s">
+<line class="row" x1="16" y1="232" x2="1194" y2="232"/>
+<g class="growx" style="animation-delay:0.46s">
+<rect x="24.0" y="206.0" width="89.6" height="18" fill="#8e63c7"/>
+</g>
+<text class="val" x="121.6" y="219.0">0.28</text>
+<text class="sql" x="330" y="219.0">SELECT `loc`.`id` AS `locationId` FROM `location` `loc` LEFT JOIN `partner` `pa...</text>
+<rect x="980" y="205.0" width="107" height="20" rx="10" fill="#c0392b"/>
+<text class="tag" x="1033.5" y="219.0" text-anchor="middle">Operações/HCM</text>
+<text class="cell" x="1120" y="219.0">1.03</text>
+</g>
+<g class="fadein" style="animation-delay:0.43s">
+<line class="row" x1="16" y1="266" x2="1194" y2="266"/>
+<g class="growx" style="animation-delay:0.53s">
+<rect x="24.0" y="240.0" width="89.6" height="18" fill="#8e63c7"/>
+</g>
+<text class="val" x="121.6" y="253.0">0.28</text>
+<text class="sql" x="330" y="253.0">SELECT `org`.`id` AS `org_id`, `org`.`org_name` AS `org_name`, `par`...</text>
+<rect x="980" y="239.0" width="107" height="20" rx="10" fill="#c0392b"/>
+<text class="tag" x="1033.5" y="253.0" text-anchor="middle">Operações/HCM</text>
+<text class="cell" x="1120" y="253.0">0.00</text>
+</g>
+<g class="fadein" style="animation-delay:0.50s">
+<line class="row" x1="16" y1="300" x2="1194" y2="300"/>
+<g class="growx" style="animation-delay:0.60s">
+<rect x="24.0" y="274.0" width="83.2" height="18" fill="#8e63c7"/>
+</g>
+<text class="val" x="115.2" y="287.0">0.26</text>
+<text class="sql" x="330" y="287.0">SELECT `mem`.`id`, `loc`.`id` AS `location_id`, `org`.`id` AS `organiz...</text>
+<rect x="980" y="273.0" width="107" height="20" rx="10" fill="#c0392b"/>
+<text class="tag" x="1033.5" y="287.0" text-anchor="middle">Operações/HCM</text>
+<text class="cell" x="1120" y="287.0">0.51</text>
+</g>
+<g class="fadein" style="animation-delay:0.57s">
+<line class="row" x1="16" y1="334" x2="1194" y2="334"/>
+<g class="growx" style="animation-delay:0.67s">
+<rect x="24.0" y="308.0" width="70.4" height="18" fill="#8e63c7"/>
+</g>
+<text class="val" x="102.4" y="321.0">0.22</text>
+<text class="sql" x="330" y="321.0">SELECT `mem`.`id` AS `memberId`, `mem`.`name` AS `memberName`, `mem`.`en...</text>
+<rect x="980" y="307.0" width="86" height="20" rx="10" fill="#1f5fbf"/>
+<text class="tag" x="1023.0" y="321.0" text-anchor="middle">Atividades</text>
+<text class="cell" x="1120" y="321.0">0.03</text>
+</g>
+<g class="fadein" style="animation-delay:0.64s">
+<line class="row" x1="16" y1="368" x2="1194" y2="368"/>
+<g class="growx" style="animation-delay:0.74s">
+<rect x="24.0" y="342.0" width="67.2" height="18" fill="#8e63c7"/>
+</g>
+<text class="val" x="99.2" y="355.0">0.21</text>
+<text class="sql" x="330" y="355.0">SELECT ? AS `NO_KILL_ON_TIMEOUT`, SUM(`tab1`.`metricValue`...</text>
+<rect x="980" y="341.0" width="79" height="20" rx="10" fill="#6b7280"/>
+<text class="tag" x="1019.5" y="355.0" text-anchor="middle">Analítico</text>
+<text class="cell" x="1120" y="355.0">0.00</text>
+</g>
+<g class="fadein" style="animation-delay:0.71s">
+<line class="row" x1="16" y1="402" x2="1194" y2="402"/>
+<g class="growx" style="animation-delay:0.81s">
+<rect x="24.0" y="376.0" width="64.0" height="18" fill="#8e63c7"/>
+</g>
+<text class="val" x="96.0" y="389.0">0.20</text>
+<text class="sql" x="330" y="389.0">SELECT `evl`.`member_id` FROM `event_log` `evl` INNER JOIN `member` `m` ON `m`...</text>
+<rect x="980" y="375.0" width="93" height="20" rx="10" fill="#2e8540"/>
+<text class="tag" x="1026.5" y="389.0" text-anchor="middle">Eventos/HCM</text>
+<text class="cell" x="1120" y="389.0">0.01</text>
+</g>
+<g class="fadein" style="animation-delay:0.78s">
+<line class="row" x1="16" y1="436" x2="1194" y2="436"/>
+<g class="growx" style="animation-delay:0.88s">
+<rect x="24.0" y="410.0" width="60.8" height="18" fill="#8e63c7"/>
+</g>
+<text class="val" x="92.8" y="423.0">0.19</text>
+<text class="sql" x="330" y="423.0">SELECT /*+ NO_JOIN_INDEX(`act` `PRIMARY`, `fk_activity_record_member...</text>
+<rect x="980" y="409.0" width="86" height="20" rx="10" fill="#1f5fbf"/>
+<text class="tag" x="1023.0" y="423.0" text-anchor="middle">Atividades</text>
+<text class="cell" x="1120" y="423.0">0.00</text>
+</g>
+<g class="fadein" style="animation-delay:0.85s">
+<line class="row" x1="16" y1="470" x2="1194" y2="470"/>
+<g class="growx" style="animation-delay:0.95s">
+<rect x="24.0" y="444.0" width="59.6" height="18" fill="#8e63c7"/>
+<rect x="83.6" y="444.0" width="1.2" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="92.8" y="457.0">0.19</text>
+<text class="sql" x="330" y="457.0">SELECT `mem`.`id` AS `memberId`, `mem`.`external_id` AS `memberExternalId`...</text>
+<rect x="980" y="443.0" width="107" height="20" rx="10" fill="#c0392b"/>
+<text class="tag" x="1033.5" y="457.0" text-anchor="middle">Operações/HCM</text>
+<text class="cell" x="1120" y="457.0">0.01</text>
+</g>
+<g class="fadein" style="animation-delay:0.92s">
+<line class="row" x1="16" y1="504" x2="1194" y2="504"/>
+<g class="growx" style="animation-delay:1.02s">
+<rect x="24.0" y="478.0" width="60.8" height="18" fill="#8e63c7"/>
+</g>
+<text class="val" x="92.8" y="491.0">0.19</text>
+<text class="sql" x="330" y="491.0">SELECT `cd`.`day_type_id` AS `type_id`, `cd`.`id` AS `id`, `cd`.`name`...</text>
+<rect x="980" y="477.0" width="107" height="20" rx="10" fill="#c0392b"/>
+<text class="tag" x="1033.5" y="491.0" text-anchor="middle">Operações/HCM</text>
+<text class="cell" x="1120" y="491.0">0.50</text>
+</g>
+<g class="fadein" style="animation-delay:0.99s">
+<line class="row" x1="16" y1="538" x2="1194" y2="538"/>
+<g class="growx" style="animation-delay:1.09s">
+<rect x="24.0" y="512.0" width="2.7" height="18" fill="#8e63c7"/>
+<rect x="26.7" y="512.0" width="51.7" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="86.4" y="525.0">0.17</text>
+<text class="sql" x="330" y="525.0">SELECT `cr`.`external_id` AS `change_reason_external_id`, `cr`.`id` AS ...</text>
+<rect x="980" y="511.0" width="107" height="20" rx="10" fill="#c0392b"/>
+<text class="tag" x="1033.5" y="525.0" text-anchor="middle">Operações/HCM</text>
+<text class="cell" x="1120" y="525.0">26.24</text>
+</g>
+<g class="fadein" style="animation-delay:1.06s">
+<line class="row" x1="16" y1="572" x2="1194" y2="572"/>
+<g class="growx" style="animation-delay:1.16s">
+<rect x="24.0" y="546.0" width="46.2" height="18" fill="#8e63c7"/>
+<rect x="70.2" y="546.0" width="8.2" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="86.4" y="559.0">0.17</text>
+<text class="sql" x="330" y="559.0">SELECT `asg`.`location_id` FROM `assignment` `asg` INNER JOIN `approval` `ap...</text>
+<rect x="980" y="545.0" width="107" height="20" rx="10" fill="#c0392b"/>
+<text class="tag" x="1033.5" y="559.0" text-anchor="middle">Operações/HCM</text>
+<text class="cell" x="1120" y="559.0">24.82</text>
+</g>
+<g class="fadein" style="animation-delay:1.13s">
+<line class="row" x1="16" y1="606" x2="1194" y2="606"/>
+<g class="growx" style="animation-delay:1.23s">
+<rect x="24.0" y="580.0" width="46.1" height="18" fill="#8e63c7"/>
+<rect x="70.1" y="580.0" width="5.1" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="83.2" y="593.0">0.16</text>
+<text class="sql" x="330" y="593.0">SELECT ? AS `NO_KILL_ON_TIMEOUT`, SUM(`tab2`.`metricValue`...</text>
+<rect x="980" y="579.0" width="86" height="20" rx="10" fill="#1f5fbf"/>
+<text class="tag" x="1023.0" y="593.0" text-anchor="middle">Atividades</text>
+<text class="cell" x="1120" y="593.0">5.25</text>
+</g>
+<g class="fadein" style="animation-delay:1.20s">
+<line class="row" x1="16" y1="640" x2="1194" y2="640"/>
+<g class="growx" style="animation-delay:1.30s">
+<rect x="24.0" y="614.0" width="48.0" height="18" fill="#8e63c7"/>
+</g>
+<text class="val" x="80.0" y="627.0">0.15</text>
+<text class="sql" x="330" y="627.0">SELECT ? AS `NO_KILL_ON_TIMEOUT`, `act`.`member_id` AS `mem...</text>
+<rect x="980" y="613.0" width="86" height="20" rx="10" fill="#1f5fbf"/>
+<text class="tag" x="1023.0" y="627.0" text-anchor="middle">Atividades</text>
+<text class="cell" x="1120" y="627.0">0.00</text>
+</g>
+<g class="fadein" style="animation-delay:1.27s">
+<line class="row" x1="16" y1="674" x2="1194" y2="674"/>
+<g class="growx" style="animation-delay:1.37s">
+<rect x="24.0" y="648.0" width="44.8" height="18" fill="#8c5a46"/>
+</g>
+<text class="val" x="76.8" y="661.0">0.14</text>
+<text class="sql" x="330" y="661.0">SELECT `jr`.`id`, `org`.`org_name` AS `org_org_name`, `ten`.`lo...</text>
+<rect x="980" y="647.0" width="93" height="20" rx="10" fill="#2e8540"/>
+<text class="tag" x="1026.5" y="661.0" text-anchor="middle">Eventos/HCM</text>
+<text class="cell" x="1120" y="661.0">0.00</text>
+</g>
+<g class="fadein" style="animation-delay:1.34s">
+<line class="row" x1="16" y1="708" x2="1194" y2="708"/>
+<g class="growx" style="animation-delay:1.44s">
+<rect x="24.0" y="682.0" width="2.1" height="18" fill="#8e63c7"/>
+<rect x="26.1" y="682.0" width="39.5" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="73.6" y="695.0">0.13</text>
+<text class="sql" x="330" y="695.0">SELECT `evl`.`id` AS `id`, `evl`.`event_date` AS `event_date`, `evl`.`re...</text>
+<rect x="980" y="681.0" width="93" height="20" rx="10" fill="#2e8540"/>
+<text class="tag" x="1026.5" y="695.0" text-anchor="middle">Eventos/HCM</text>
+<text class="cell" x="1120" y="695.0">1.19</text>
+</g>
+<g class="fadein" style="animation-delay:1.41s">
+<line class="row" x1="16" y1="742" x2="1194" y2="742"/>
+<g class="growx" style="animation-delay:1.51s">
+<rect x="24.0" y="716.0" width="35.2" height="18" fill="#8e63c7"/>
+</g>
+<text class="val" x="67.2" y="729.0">0.11</text>
+<text class="sql" x="330" y="729.0">SELECT `evl`.`member_id` AS `mem_id`, `evl`.`terminal_id` AS `terminal_id`...</text>
+<rect x="980" y="715.0" width="93" height="20" rx="10" fill="#2e8540"/>
+<text class="tag" x="1026.5" y="729.0" text-anchor="middle">Eventos/HCM</text>
+<text class="cell" x="1120" y="729.0">0.15</text>
+</g>
+<g class="fadein" style="animation-delay:1.48s">
+<line class="row" x1="16" y1="776" x2="1194" y2="776"/>
+<g class="growx" style="animation-delay:1.58s">
+<rect x="24.0" y="750.0" width="28.8" height="18" fill="#8e63c7"/>
+<rect x="52.8" y="750.0" width="3.2" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="64.0" y="763.0">0.10</text>
+<text class="sql" x="330" y="763.0">SELECT `act`.`member_id` AS `memberId`, `act`.`minutes` AS `minutes`, `act`...</text>
+<rect x="980" y="749.0" width="86" height="20" rx="10" fill="#1f5fbf"/>
+<text class="tag" x="1023.0" y="763.0" text-anchor="middle">Atividades</text>
+<text class="cell" x="1120" y="763.0">0.30</text>
+</g>
+</svg>

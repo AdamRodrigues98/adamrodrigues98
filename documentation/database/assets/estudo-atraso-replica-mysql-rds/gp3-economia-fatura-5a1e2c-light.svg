@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 460" width="1000" height="460" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Inter,Helvetica,Arial,sans-serif" role="img" aria-label="Custo mensal do disco na fatura: de US$ 2.593,70 para US$ 1.876,61">
+<title>Custo mensal do disco na fatura: de US$ 2.593,70 para US$ 1.876,61</title>
+<style>
+.grow{transform-box:fill-box;transform-origin:bottom;animation:grow 9s cubic-bezier(.2,.7,.2,1) infinite both}
+@keyframes grow{0%{transform:scaleY(0);opacity:1}10%,92%{transform:scaleY(1);opacity:1}100%{transform:scaleY(1);opacity:0}}
+.growx{transform-box:fill-box;transform-origin:left;animation:growx 9s cubic-bezier(.2,.7,.2,1) infinite both}
+@keyframes growx{0%{transform:scaleX(0);opacity:1}12%,92%{transform:scaleX(1);opacity:1}100%{transform:scaleX(1);opacity:0}}
+.fade{animation:fade 9s ease-out infinite both}
+@keyframes fade{0%,12%{opacity:0}22%,92%{opacity:1}100%{opacity:0}}
+.draw{stroke-dasharray:var(--l);stroke-dashoffset:var(--l);animation:draw 9s ease-out infinite both}
+@keyframes draw{0%{stroke-dashoffset:var(--l);opacity:1}40%,92%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:0}}
+.pulse{animation:pulse 1.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.5)}}
+</style>
+<defs></defs>
+<rect width="1000" height="460" fill="#fcfcfb"/>
+<text x="24.0" y="34.0" font-size="18" fill="#0b0b0b" text-anchor="start" font-weight="650" >Para onde foi o dinheiro</text>
+<text x="24.0" y="54.0" font-size="12.5" fill="#52514e" text-anchor="start" font-weight="400" >Custo mensal do disco de banco na fatura, em US$ (desconto de contrato aplicado)</text>
+<rect x="90" y="364.6" width="130" height="23.4" fill="#eda100" class="grow" style="animation-delay:0.00s"/>
+<text x="212.0" y="381.3" font-size="11.5" fill="#ffffff" text-anchor="end" font-weight="600" class="fade" style="animation-delay:0.30s">228,80</text>
+<rect x="90" y="217.9" width="130" height="144.7" fill="#eb6834" class="grow" style="animation-delay:0.30s"/>
+<text x="212.0" y="295.2" font-size="11.5" fill="#ffffff" text-anchor="end" font-weight="600" class="fade" style="animation-delay:0.60s">1.320,00</text>
+<path d="M90.0,215.9 V105.8 Q90.0,101.8 94.0,101.8 H216.0 Q220.0,101.8 220.0,105.8 V215.9 Z" fill="#2a78d6" class="grow" style="animation-delay:0.45s"/>
+<text x="212.0" y="163.9" font-size="11.5" fill="#ffffff" text-anchor="end" font-weight="600" class="fade" style="animation-delay:0.75s">1.044,90</text>
+<text x="155.0" y="412.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="600" letter-spacing="1.5">ANTES</text>
+<text x="155.0" y="432.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" >US$ 2.593,70</text>
+<rect x="290" y="335.2" width="130" height="52.8" fill="#eda100" class="grow" style="animation-delay:0.50s"/>
+<text x="412.0" y="366.6" font-size="11.5" fill="#ffffff" text-anchor="end" font-weight="600" class="fade" style="animation-delay:0.80s">492,80</text>
+<rect x="290" y="323.5" width="130" height="9.7" fill="#1baf7a" class="grow" style="animation-delay:0.65s"/>
+<rect x="290" y="288.3" width="130" height="33.2" fill="#eb6834" class="grow" style="animation-delay:0.80s"/>
+<text x="412.0" y="309.9" font-size="11.5" fill="#ffffff" text-anchor="end" font-weight="600" class="fade" style="animation-delay:1.10s">316,80</text>
+<path d="M290.0,286.3 V185.5 Q290.0,181.5 294.0,181.5 H416.0 Q420.0,181.5 420.0,185.5 V286.3 Z" fill="#2a78d6" class="grow" style="animation-delay:0.95s"/>
+<text x="412.0" y="238.9" font-size="11.5" fill="#ffffff" text-anchor="end" font-weight="600" class="fade" style="animation-delay:1.25s">961,41</text>
+<text x="355.0" y="412.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="600" letter-spacing="1.5">DEPOIS</text>
+<text x="355.0" y="432.0" font-size="14" fill="#0b0b0b" text-anchor="middle" font-weight="700" >US$ 1.876,61</text>
+<line x1="70" y1="390" x2="440" y2="390" stroke="#b8b7b0"/>
+<text x="500.0" y="150.0" font-size="28" fill="#006300" text-anchor="start" font-weight="700" class="fade" style="animation-delay:1.2s">- US$ 717,09 por mês</text>
+<text x="500.0" y="176.0" font-size="13" fill="#52514e" text-anchor="start" font-weight="400" class="fade" style="animation-delay:1.3s">US$ 8.605 por ano, recorrente, confirmado na fatura</text>
+<text x="500.0" y="215.0" font-size="12.5" fill="#0b0b0b" text-anchor="start" font-weight="400" class="fade" style="animation-delay:1.4s">A queda veio das operações do primário:</text>
+<text x="500.0" y="235.0" font-size="12.5" fill="#0b0b0b" text-anchor="start" font-weight="400" class="fade" style="animation-delay:1.5s">de US$ 1.320,00 para US$ 316,80 (io2 provisionado para gp3).</text>
+<text x="500.0" y="255.0" font-size="12.5" fill="#0b0b0b" text-anchor="start" font-weight="400" class="fade" style="animation-delay:1.6s">As operações da réplica subiram US$ 264,00 (25.000 para 40.000 IOPS)</text>
+<text x="500.0" y="275.0" font-size="12.5" fill="#0b0b0b" text-anchor="start" font-weight="400" class="fade" style="animation-delay:1.7s">e mesmo assim a conta do disco caiu 27,6%.</text>
+<rect x="500" y="321" width="11" height="11" rx="2" fill="#2a78d6" stroke="none"/>
+<text x="517.0" y="331.0" font-size="11.5" fill="#52514e" text-anchor="start" font-weight="400" >Disco do primário</text>
+<rect x="690" y="321" width="11" height="11" rx="2" fill="#eb6834" stroke="none"/>
+<text x="707.0" y="331.0" font-size="11.5" fill="#52514e" text-anchor="start" font-weight="400" >Operações do primário</text>
+<rect x="500" y="343" width="11" height="11" rx="2" fill="#1baf7a" stroke="none"/>
+<text x="517.0" y="353.0" font-size="11.5" fill="#52514e" text-anchor="start" font-weight="400" >Vazão do primário</text>
+<rect x="690" y="343" width="11" height="11" rx="2" fill="#eda100" stroke="none"/>
+<text x="707.0" y="353.0" font-size="11.5" fill="#52514e" text-anchor="start" font-weight="400" >Operações da réplica</text>
+</svg>

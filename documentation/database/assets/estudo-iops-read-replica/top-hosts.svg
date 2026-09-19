@@ -1,0 +1,235 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="800" viewBox="0 0 640 800" role="img" aria-label="Top hosts (25)">
+<style>
+    .card { fill: #ffffff; stroke: #d0d7de; }
+    .title { font: 600 16px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #16191f; }
+    .subtitle { font: 400 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #5f6b7a; }
+    .axis { font: 400 11px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #5f6b7a; }
+    .legend { font: 400 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #16191f; }
+    .grid { stroke: #e9ebed; stroke-width: 1; }
+    .base { stroke: #8d99a8; stroke-width: 1; }
+    .limit { font: 600 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .hdr { font: 600 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #16191f; }
+    .cell { font: 400 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #16191f; }
+    .sql { font: 400 11.5px SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; fill: #16191f; }
+    .val { font: 400 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #16191f; }
+    .tag { font: 600 10.5px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #ffffff; }
+    .row { stroke: #e9ebed; }
+    .refline { stroke: #5f6b7a; }
+    .hl { fill: #fff4e5; }
+    .hlbox { fill: #fff4e5; stroke: #f0b35a; }
+    @media (prefers-color-scheme: dark) {
+      .card { fill: #0d1117; stroke: #30363d; }
+      .title, .legend, .hdr, .cell, .sql, .val { fill: #e6edf3; }
+      .subtitle, .axis { fill: #8b949e; }
+      .grid, .row { stroke: #21262d; }
+      .base { stroke: #484f58; }
+      .refline { stroke: #8b949e; }
+      .hl { fill: #3b2e1a; }
+      .hlbox { fill: #3b2e1a; stroke: #d29922; }
+    }
+    .draw { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 2.6s ease-out forwards; }
+    .fade { opacity: 0; animation: fade 1.2s ease-out 1.4s forwards; }
+    .fadein { opacity: 0; animation: fade .6s ease-out forwards; }
+    .growy { transform-box: fill-box; transform-origin: 50% 100%; transform: scaleY(0); animation: growy .6s ease-out forwards; }
+    .growx { transform-box: fill-box; transform-origin: 0% 50%; transform: scaleX(0); animation: growx .8s ease-out forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes fade { to { opacity: 1; } }
+    @keyframes growy { to { transform: scaleY(1); } }
+    @keyframes growx { to { transform: scaleX(1); } }
+    @media (prefers-reduced-motion: reduce) {
+      .draw { animation: none; stroke-dashoffset: 0; }
+      .fade, .fadein { animation: none; opacity: 1; }
+      .growy, .growx { animation: none; transform: none; }
+    }
+</style>
+<rect class="card" x="0.5" y="0.5" width="639" height="799" rx="10"/>
+<text class="title" x="24" y="32">Top hosts (25)</text>
+<text class="subtitle" x="24" y="52">empresa1-primary-8-read  |  21/07/2026 06:00 às 19:00  |  IPs mascarados</text>
+<text class="hdr" x="24" y="82">Load by waits (AAS)</text>
+<text class="hdr" x="380" y="82">Host</text>
+<line class="base" x1="16" y1="92" x2="624" y2="92"/>
+<g class="fadein" style="animation-delay:0.15s">
+<line class="row" x1="16" y1="130" x2="624" y2="130"/>
+<g class="growx" style="animation-delay:0.25s">
+<rect x="24.0" y="104.0" width="234.0" height="18" fill="#8e63c7"/>
+<rect x="258.0" y="104.0" width="15.6" height="18" fill="#2a7ab8"/>
+<rect x="273.6" y="104.0" width="10.4" height="18" fill="#8c5a46"/>
+</g>
+<text class="val" x="292.0" y="117.0">1.33</text>
+<text class="cell" x="380" y="117.0">10.194.9999.9999</text>
+</g>
+<g class="fadein" style="animation-delay:0.22s">
+<line class="row" x1="16" y1="164" x2="624" y2="164"/>
+<g class="growx" style="animation-delay:0.32s">
+<rect x="24.0" y="138.0" width="190.0" height="18" fill="#8e63c7"/>
+<rect x="214.0" y="138.0" width="12.7" height="18" fill="#2a7ab8"/>
+<rect x="226.7" y="138.0" width="8.4" height="18" fill="#8c5a46"/>
+</g>
+<text class="val" x="243.1" y="151.0">1.08</text>
+<text class="cell" x="380" y="151.0">10.194.9999.9999</text>
+</g>
+<g class="fadein" style="animation-delay:0.29s">
+<line class="row" x1="16" y1="198" x2="624" y2="198"/>
+<g class="growx" style="animation-delay:0.39s">
+<rect x="24.0" y="172.0" width="163.6" height="18" fill="#8e63c7"/>
+<rect x="187.6" y="172.0" width="10.9" height="18" fill="#2a7ab8"/>
+<rect x="198.5" y="172.0" width="7.3" height="18" fill="#8c5a46"/>
+</g>
+<text class="val" x="213.8" y="185.0">0.93</text>
+<text class="cell" x="380" y="185.0">10.194.9999.9999</text>
+</g>
+<g class="fadein" style="animation-delay:0.36s">
+<line class="row" x1="16" y1="232" x2="624" y2="232"/>
+<g class="growx" style="animation-delay:0.46s">
+<rect x="24.0" y="206.0" width="149.5" height="18" fill="#8e63c7"/>
+<rect x="173.5" y="206.0" width="10.0" height="18" fill="#2a7ab8"/>
+<rect x="183.5" y="206.0" width="6.6" height="18" fill="#8c5a46"/>
+</g>
+<text class="val" x="198.2" y="219.0">0.85</text>
+<text class="cell" x="380" y="219.0">10.194.9999.9999</text>
+</g>
+<g class="fadein" style="animation-delay:0.43s">
+<line class="row" x1="16" y1="266" x2="624" y2="266"/>
+<g class="growx" style="animation-delay:0.53s">
+<rect x="24.0" y="240.0" width="80.0" height="18" fill="#8e63c7"/>
+<rect x="104.0" y="240.0" width="6.0" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="118.0" y="253.0">0.44</text>
+<text class="cell" x="380" y="253.0">10.194.9999.9999</text>
+</g>
+<g class="fadein" style="animation-delay:0.50s">
+<line class="row" x1="16" y1="300" x2="624" y2="300"/>
+<g class="growx" style="animation-delay:0.60s">
+<rect x="24.0" y="274.0" width="69.1" height="18" fill="#8e63c7"/>
+<rect x="93.1" y="274.0" width="5.2" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="106.3" y="287.0">0.38</text>
+<text class="cell" x="380" y="287.0">10.194.9999.9999</text>
+</g>
+<g class="fadein" style="animation-delay:0.57s">
+<line class="row" x1="16" y1="334" x2="624" y2="334"/>
+<g class="growx" style="animation-delay:0.67s">
+<rect x="24.0" y="308.0" width="65.4" height="18" fill="#8e63c7"/>
+<rect x="89.4" y="308.0" width="4.9" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="102.4" y="321.0">0.36</text>
+<text class="cell" x="380" y="321.0">10.194.9999.9999</text>
+</g>
+<g class="fadein" style="animation-delay:0.64s">
+<line class="row" x1="16" y1="368" x2="624" y2="368"/>
+<g class="growx" style="animation-delay:0.74s">
+<rect x="24.0" y="342.0" width="49.1" height="18" fill="#8e63c7"/>
+<rect x="73.1" y="342.0" width="3.7" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="84.8" y="355.0">0.27</text>
+<text class="cell" x="380" y="355.0">10.194.9999.9999</text>
+</g>
+<g class="fadein" style="animation-delay:0.71s">
+<line class="row" x1="16" y1="402" x2="624" y2="402"/>
+<g class="growx" style="animation-delay:0.81s">
+<rect x="24.0" y="376.0" width="40.0" height="18" fill="#8e63c7"/>
+<rect x="64.0" y="376.0" width="3.0" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="75.0" y="389.0">0.22</text>
+<text class="cell" x="380" y="389.0">10.194.9999.9999</text>
+</g>
+<g class="fadein" style="animation-delay:0.78s">
+<line class="row" x1="16" y1="436" x2="624" y2="436"/>
+<g class="growx" style="animation-delay:0.88s">
+<rect x="24.0" y="410.0" width="36.4" height="18" fill="#8e63c7"/>
+<rect x="60.4" y="410.0" width="2.7" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="71.1" y="423.0">0.20</text>
+<text class="cell" x="380" y="423.0">10.194.9999.9999</text>
+</g>
+<g class="fadein" style="animation-delay:0.85s">
+<line class="row" x1="16" y1="470" x2="624" y2="470"/>
+<g class="growx" style="animation-delay:0.95s">
+<rect x="24.0" y="444.0" width="34.5" height="18" fill="#8e63c7"/>
+<rect x="58.5" y="444.0" width="2.6" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="69.1" y="457.0">0.19</text>
+<text class="cell" x="380" y="457.0">10.194.9999.9999</text>
+</g>
+<g class="fadein" style="animation-delay:0.92s">
+<line class="row" x1="16" y1="504" x2="624" y2="504"/>
+<g class="growx" style="animation-delay:1.02s">
+<rect x="24.0" y="478.0" width="34.5" height="18" fill="#8e63c7"/>
+<rect x="58.5" y="478.0" width="2.6" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="69.1" y="491.0">0.19</text>
+<text class="cell" x="380" y="491.0">10.194.9999.9999</text>
+</g>
+<g class="fadein" style="animation-delay:0.99s">
+<line class="row" x1="16" y1="538" x2="624" y2="538"/>
+<g class="growx" style="animation-delay:1.09s">
+<rect x="24.0" y="512.0" width="29.1" height="18" fill="#8e63c7"/>
+<rect x="53.1" y="512.0" width="2.2" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="63.3" y="525.0">0.16</text>
+<text class="cell" x="380" y="525.0">10.194.9999.9999</text>
+</g>
+<g class="fadein" style="animation-delay:1.06s">
+<line class="row" x1="16" y1="572" x2="624" y2="572"/>
+<g class="growx" style="animation-delay:1.16s">
+<rect x="24.0" y="546.0" width="29.1" height="18" fill="#8e63c7"/>
+<rect x="53.1" y="546.0" width="2.2" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="63.3" y="559.0">0.16</text>
+<text class="cell" x="380" y="559.0">10.194.9999.9999</text>
+</g>
+<g class="fadein" style="animation-delay:1.13s">
+<line class="row" x1="16" y1="606" x2="624" y2="606"/>
+<g class="growx" style="animation-delay:1.23s">
+<rect x="24.0" y="580.0" width="25.5" height="18" fill="#8e63c7"/>
+<rect x="49.5" y="580.0" width="1.9" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="59.4" y="593.0">0.14</text>
+<text class="cell" x="380" y="593.0">10.194.9999.9999</text>
+</g>
+<g class="fadein" style="animation-delay:1.20s">
+<line class="row" x1="16" y1="640" x2="624" y2="640"/>
+<g class="growx" style="animation-delay:1.30s">
+<rect x="24.0" y="614.0" width="23.6" height="18" fill="#8e63c7"/>
+<rect x="47.6" y="614.0" width="1.8" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="57.4" y="627.0">0.13</text>
+<text class="cell" x="380" y="627.0">10.194.9999.9999</text>
+</g>
+<g class="fadein" style="animation-delay:1.27s">
+<line class="row" x1="16" y1="674" x2="624" y2="674"/>
+<g class="growx" style="animation-delay:1.37s">
+<rect x="24.0" y="648.0" width="23.6" height="18" fill="#8e63c7"/>
+<rect x="47.6" y="648.0" width="1.8" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="57.4" y="661.0">0.13</text>
+<text class="cell" x="380" y="661.0">10.194.9999.9999</text>
+</g>
+<g class="fadein" style="animation-delay:1.34s">
+<line class="row" x1="16" y1="708" x2="624" y2="708"/>
+<g class="growx" style="animation-delay:1.44s">
+<rect x="24.0" y="682.0" width="21.8" height="18" fill="#8e63c7"/>
+<rect x="45.8" y="682.0" width="1.6" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="55.5" y="695.0">0.12</text>
+<text class="cell" x="380" y="695.0">10.194.9999.9999</text>
+</g>
+<g class="fadein" style="animation-delay:1.41s">
+<line class="row" x1="16" y1="742" x2="624" y2="742"/>
+<g class="growx" style="animation-delay:1.51s">
+<rect x="24.0" y="716.0" width="20.0" height="18" fill="#8e63c7"/>
+<rect x="44.0" y="716.0" width="1.5" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="53.5" y="729.0">0.11</text>
+<text class="cell" x="380" y="729.0">10.194.9999.9999</text>
+</g>
+<g class="fadein" style="animation-delay:1.48s">
+<line class="row" x1="16" y1="776" x2="624" y2="776"/>
+<g class="growx" style="animation-delay:1.58s">
+<rect x="24.0" y="750.0" width="18.2" height="18" fill="#8e63c7"/>
+<rect x="42.2" y="750.0" width="1.4" height="18" fill="#2a7ab8"/>
+</g>
+<text class="val" x="51.5" y="763.0">0.10</text>
+<text class="cell" x="380" y="763.0">10.194.9999.9999</text>
+</g>
+</svg>

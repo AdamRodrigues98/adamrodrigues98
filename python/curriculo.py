@@ -291,7 +291,7 @@ MOOT_ROLES = [
 
 SINGLE_ROLES = [
     {
-        "title": "Database Analyst N3 · Oracle PL/SQL",
+        "title": "Database Analyst N3 · Oracle PL-SQL",
         "company": "Unimed-BH  ·  Belo Horizonte, MG",
         "period": "out/2020 – dez/2021",
         "bullets": [
@@ -302,7 +302,7 @@ SINGLE_ROLES = [
         ],
     },
     {
-        "title": "Analista de TI · ERP / SQL Server",
+        "title": "Analista de Tecnologia da Informação SQL Server & T-SQL",
         "company": "Mastermaq Software  ·  Belo Horizonte, MG",
         "period": "jun/2018 – jan/2020",
         "bullets": [

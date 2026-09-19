@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-label="IO throughput (MB por segundo)">
+<style>
+    .card { fill: #ffffff; stroke: #d0d7de; }
+    .title { font: 600 16px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #16191f; }
+    .subtitle { font: 400 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #5f6b7a; }
+    .axis { font: 400 11px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #5f6b7a; }
+    .legend { font: 400 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #16191f; }
+    .grid { stroke: #e9ebed; stroke-width: 1; }
+    .base { stroke: #8d99a8; stroke-width: 1; }
+    .limit { font: 600 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .hdr { font: 600 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #16191f; }
+    .cell { font: 400 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #16191f; }
+    .sql { font: 400 11.5px SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; fill: #16191f; }
+    .val { font: 400 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #16191f; }
+    .tag { font: 600 10.5px -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #ffffff; }
+    .row { stroke: #e9ebed; }
+    .refline { stroke: #5f6b7a; }
+    .hl { fill: #fff4e5; }
+    .hlbox { fill: #fff4e5; stroke: #f0b35a; }
+    @media (prefers-color-scheme: dark) {
+      .card { fill: #0d1117; stroke: #30363d; }
+      .title, .legend, .hdr, .cell, .sql, .val { fill: #e6edf3; }
+      .subtitle, .axis { fill: #8b949e; }
+      .grid, .row { stroke: #21262d; }
+      .base { stroke: #484f58; }
+      .refline { stroke: #8b949e; }
+      .hl { fill: #3b2e1a; }
+      .hlbox { fill: #3b2e1a; stroke: #d29922; }
+    }
+    .draw { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 2.6s ease-out forwards; }
+    .fade { opacity: 0; animation: fade 1.2s ease-out 1.4s forwards; }
+    .fadein { opacity: 0; animation: fade .6s ease-out forwards; }
+    .growy { transform-box: fill-box; transform-origin: 50% 100%; transform: scaleY(0); animation: growy .6s ease-out forwards; }
+    .growx { transform-box: fill-box; transform-origin: 0% 50%; transform: scaleX(0); animation: growx .8s ease-out forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes fade { to { opacity: 1; } }
+    @keyframes growy { to { transform: scaleY(1); } }
+    @keyframes growx { to { transform: scaleX(1); } }
+    @media (prefers-reduced-motion: reduce) {
+      .draw { animation: none; stroke-dashoffset: 0; }
+      .fade, .fadein { animation: none; opacity: 1; }
+      .growy, .growx { animation: none; transform: none; }
+    }
+</style>
+<rect class="card" x="0.5" y="0.5" width="899" height="359" rx="10"/>
+<text class="title" x="24" y="32">IO throughput (MB por segundo)</text>
+<text class="subtitle" x="24" y="52">empresa1-primary-8-read  |  21/07/2026 06:00 às 19:00</text>
+<line class="grid" x1="70" y1="300.0" x2="876" y2="300.0"/>
+<text class="axis" x="62" y="304.0" text-anchor="end">0 MB</text>
+<line class="grid" x1="70" y1="248.9" x2="876" y2="248.9"/>
+<text class="axis" x="62" y="252.9" text-anchor="end">100 MB</text>
+<line class="grid" x1="70" y1="197.8" x2="876" y2="197.8"/>
+<text class="axis" x="62" y="201.8" text-anchor="end">200 MB</text>
+<line class="grid" x1="70" y1="146.7" x2="876" y2="146.7"/>
+<text class="axis" x="62" y="150.7" text-anchor="end">300 MB</text>
+<line class="grid" x1="70" y1="95.6" x2="876" y2="95.6"/>
+<text class="axis" x="62" y="99.6" text-anchor="end">400 MB</text>
+<line class="base" x1="70" y1="300" x2="876" y2="300"/>
+<line class="base" x1="70.0" y1="300" x2="70.0" y2="304"/>
+<text class="axis" x="70.0" y="318" text-anchor="middle">06:00</text>
+<line class="base" x1="132.0" y1="300" x2="132.0" y2="304"/>
+<text class="axis" x="132.0" y="318" text-anchor="middle">07:00</text>
+<line class="base" x1="194.0" y1="300" x2="194.0" y2="304"/>
+<text class="axis" x="194.0" y="318" text-anchor="middle">08:00</text>
+<line class="base" x1="256.0" y1="300" x2="256.0" y2="304"/>
+<text class="axis" x="256.0" y="318" text-anchor="middle">09:00</text>
+<line class="base" x1="318.0" y1="300" x2="318.0" y2="304"/>
+<text class="axis" x="318.0" y="318" text-anchor="middle">10:00</text>
+<line class="base" x1="380.0" y1="300" x2="380.0" y2="304"/>
+<text class="axis" x="380.0" y="318" text-anchor="middle">11:00</text>
+<line class="base" x1="442.0" y1="300" x2="442.0" y2="304"/>
+<text class="axis" x="442.0" y="318" text-anchor="middle">12:00</text>
+<line class="base" x1="504.0" y1="300" x2="504.0" y2="304"/>
+<text class="axis" x="504.0" y="318" text-anchor="middle">13:00</text>
+<line class="base" x1="566.0" y1="300" x2="566.0" y2="304"/>
+<text class="axis" x="566.0" y="318" text-anchor="middle">14:00</text>
+<line class="base" x1="628.0" y1="300" x2="628.0" y2="304"/>
+<text class="axis" x="628.0" y="318" text-anchor="middle">15:00</text>
+<line class="base" x1="690.0" y1="300" x2="690.0" y2="304"/>
+<text class="axis" x="690.0" y="318" text-anchor="middle">16:00</text>
+<line class="base" x1="752.0" y1="300" x2="752.0" y2="304"/>
+<text class="axis" x="752.0" y="318" text-anchor="middle">17:00</text>
+<line class="base" x1="814.0" y1="300" x2="814.0" y2="304"/>
+<text class="axis" x="814.0" y="318" text-anchor="middle">18:00</text>
+<line class="base" x1="876.0" y1="300" x2="876.0" y2="304"/>
+<text class="axis" x="876.0" y="318" text-anchor="middle">19:00</text>
+<path class="fade" d="M70.0,300 L70.0,288.5 L75.2,286.1 L80.3,285.9 L85.5,283.6 L90.7,282.4 L95.8,284.9 L101.0,284.4 L106.2,277.5 L111.3,280.7 L116.5,280.0 L121.7,272.7 L126.8,276.0 L132.0,271.6 L137.2,272.8 L142.3,269.0 L147.5,272.4 L152.7,264.6 L157.8,259.4 L163.0,261.7 L168.2,256.5 L173.3,255.2 L178.5,262.7 L183.7,249.3 L188.8,249.9 L194.0,253.0 L199.2,255.0 L204.3,234.8 L209.5,239.5 L214.7,230.3 L219.8,222.5 L225.0,222.8 L230.2,213.4 L235.3,224.3 L240.5,208.9 L245.7,216.0 L250.8,196.8 L256.0,194.6 L261.2,215.9 L266.3,209.6 L271.5,201.5 L276.7,165.4 L281.8,179.4 L287.0,160.1 L292.2,155.3 L297.3,162.2 L302.5,181.2 L307.7,196.3 L312.8,191.4 L318.0,195.7 L323.2,183.3 L328.3,190.7 L333.5,180.7 L338.7,182.6 L343.8,176.8 L349.0,188.1 L354.2,206.8 L359.3,179.3 L364.5,174.5 L369.7,176.0 L374.8,188.4 L380.0,181.9 L385.2,203.3 L390.3,181.2 L395.5,192.9 L400.7,205.3 L405.8,215.0 L411.0,188.3 L416.2,185.5 L421.3,218.6 L426.5,196.0 L431.7,210.9 L436.8,221.0 L442.0,218.0 L447.2,204.8 L452.3,203.6 L457.5,230.4 L462.7,215.1 L467.8,233.3 L473.0,215.9 L478.2,228.4 L483.3,215.3 L488.5,214.7 L493.7,228.9 L498.8,218.4 L504.0,237.2 L509.2,241.0 L514.3,225.7 L519.5,238.7 L524.7,232.4 L529.8,224.6 L535.0,216.7 L540.2,228.0 L545.3,229.6 L550.5,202.1 L555.7,217.4 L560.8,194.4 L566.0,194.0 L571.2,210.3 L576.3,206.5 L581.5,203.4 L586.7,173.0 L591.8,148.1 L597.0,122.9 L602.2,147.1 L607.3,162.8 L612.5,197.5 L617.7,199.3 L622.8,187.4 L628.0,204.5 L633.2,203.1 L638.3,178.9 L643.5,197.0 L648.7,197.0 L653.8,217.5 L659.0,203.9 L664.2,199.1 L669.3,219.8 L674.5,200.1 L679.7,200.6 L684.8,221.0 L690.0,203.0 L695.2,209.7 L700.3,204.2 L705.5,216.1 L710.7,206.4 L715.8,206.9 L721.0,230.2 L726.2,230.2 L731.3,213.3 L736.5,206.5 L741.7,228.3 L746.8,223.9 L752.0,221.6 L757.2,231.0 L762.3,231.8 L767.5,235.1 L772.7,235.7 L777.8,232.4 L783.0,241.3 L788.2,241.6 L793.3,235.2 L798.5,252.8 L803.7,243.8 L808.8,242.8 L814.0,252.9 L819.2,256.7 L824.3,249.3 L829.5,260.8 L834.7,263.8 L839.8,262.6 L845.0,261.6 L850.2,271.4 L855.3,271.1 L860.5,273.2 L865.7,270.9 L870.8,277.0 L876.0,276.2 L876.0,300 Z" fill="#1f77b4" fill-opacity="0.18"/>
+<path class="draw" pathLength="1" d="M70.0,288.5 L75.2,286.1 L80.3,285.9 L85.5,283.6 L90.7,282.4 L95.8,284.9 L101.0,284.4 L106.2,277.5 L111.3,280.7 L116.5,280.0 L121.7,272.7 L126.8,276.0 L132.0,271.6 L137.2,272.8 L142.3,269.0 L147.5,272.4 L152.7,264.6 L157.8,259.4 L163.0,261.7 L168.2,256.5 L173.3,255.2 L178.5,262.7 L183.7,249.3 L188.8,249.9 L194.0,253.0 L199.2,255.0 L204.3,234.8 L209.5,239.5 L214.7,230.3 L219.8,222.5 L225.0,222.8 L230.2,213.4 L235.3,224.3 L240.5,208.9 L245.7,216.0 L250.8,196.8 L256.0,194.6 L261.2,215.9 L266.3,209.6 L271.5,201.5 L276.7,165.4 L281.8,179.4 L287.0,160.1 L292.2,155.3 L297.3,162.2 L302.5,181.2 L307.7,196.3 L312.8,191.4 L318.0,195.7 L323.2,183.3 L328.3,190.7 L333.5,180.7 L338.7,182.6 L343.8,176.8 L349.0,188.1 L354.2,206.8 L359.3,179.3 L364.5,174.5 L369.7,176.0 L374.8,188.4 L380.0,181.9 L385.2,203.3 L390.3,181.2 L395.5,192.9 L400.7,205.3 L405.8,215.0 L411.0,188.3 L416.2,185.5 L421.3,218.6 L426.5,196.0 L431.7,210.9 L436.8,221.0 L442.0,218.0 L447.2,204.8 L452.3,203.6 L457.5,230.4 L462.7,215.1 L467.8,233.3 L473.0,215.9 L478.2,228.4 L483.3,215.3 L488.5,214.7 L493.7,228.9 L498.8,218.4 L504.0,237.2 L509.2,241.0 L514.3,225.7 L519.5,238.7 L524.7,232.4 L529.8,224.6 L535.0,216.7 L540.2,228.0 L545.3,229.6 L550.5,202.1 L555.7,217.4 L560.8,194.4 L566.0,194.0 L571.2,210.3 L576.3,206.5 L581.5,203.4 L586.7,173.0 L591.8,148.1 L597.0,122.9 L602.2,147.1 L607.3,162.8 L612.5,197.5 L617.7,199.3 L622.8,187.4 L628.0,204.5 L633.2,203.1 L638.3,178.9 L643.5,197.0 L648.7,197.0 L653.8,217.5 L659.0,203.9 L664.2,199.1 L669.3,219.8 L674.5,200.1 L679.7,200.6 L684.8,221.0 L690.0,203.0 L695.2,209.7 L700.3,204.2 L705.5,216.1 L710.7,206.4 L715.8,206.9 L721.0,230.2 L726.2,230.2 L731.3,213.3 L736.5,206.5 L741.7,228.3 L746.8,223.9 L752.0,221.6 L757.2,231.0 L762.3,231.8 L767.5,235.1 L772.7,235.7 L777.8,232.4 L783.0,241.3 L788.2,241.6 L793.3,235.2 L798.5,252.8 L803.7,243.8 L808.8,242.8 L814.0,252.9 L819.2,256.7 L824.3,249.3 L829.5,260.8 L834.7,263.8 L839.8,262.6 L845.0,261.6 L850.2,271.4 L855.3,271.1 L860.5,273.2 L865.7,270.9 L870.8,277.0 L876.0,276.2" fill="none" stroke="#1f77b4" stroke-width="1.6" stroke-linejoin="round" style="animation-delay:0.00s"/>
+<path class="draw" pathLength="1" d="M70.0,286.3 L75.2,285.7 L80.3,282.0 L85.5,282.4 L90.7,281.7 L95.8,277.1 L101.0,270.2 L106.2,269.5 L111.3,268.0 L116.5,272.7 L121.7,267.2 L126.8,269.0 L132.0,268.9 L137.2,268.4 L142.3,265.3 L147.5,252.1 L152.7,251.8 L157.8,250.3 L163.0,248.5 L168.2,258.1 L173.3,254.4 L178.5,246.3 L183.7,242.3 L188.8,237.7 L194.0,235.2 L199.2,250.9 L204.3,236.1 L209.5,231.7 L214.7,233.4 L219.8,239.9 L225.0,229.2 L230.2,238.1 L235.3,210.0 L240.5,209.2 L245.7,216.7 L250.8,222.4 L256.0,198.9 L261.2,208.0 L266.3,193.9 L271.5,192.3 L276.7,202.6 L281.8,199.0 L287.0,170.2 L292.2,151.0 L297.3,166.8 L302.5,185.7 L307.7,173.5 L312.8,206.0 L318.0,203.8 L323.2,177.4 L328.3,194.3 L333.5,183.4 L338.7,187.2 L343.8,193.8 L349.0,165.2 L354.2,202.0 L359.3,193.1 L364.5,203.2 L369.7,185.2 L374.8,201.5 L380.0,198.9 L385.2,183.0 L390.3,201.9 L395.5,192.8 L400.7,179.3 L405.8,213.4 L411.0,215.7 L416.2,209.6 L421.3,188.8 L426.5,195.7 L431.7,211.6 L436.8,208.7 L442.0,215.4 L447.2,204.3 L452.3,220.3 L457.5,194.5 L462.7,186.5 L467.8,184.0 L473.0,192.4 L478.2,183.3 L483.3,220.2 L488.5,209.3 L493.7,182.3 L498.8,189.6 L504.0,203.9 L509.2,182.4 L514.3,195.1 L519.5,186.9 L524.7,207.8 L529.8,211.7 L535.0,201.3 L540.2,213.6 L545.3,203.4 L550.5,179.7 L555.7,205.1 L560.8,218.0 L566.0,216.4 L571.2,210.9 L576.3,185.2 L581.5,202.2 L586.7,185.4 L591.8,140.1 L597.0,88.4 L602.2,134.1 L607.3,187.0 L612.5,212.6 L617.7,212.5 L622.8,207.3 L628.0,185.1 L633.2,207.3 L638.3,211.7 L643.5,191.8 L648.7,201.9 L653.8,168.7 L659.0,206.7 L664.2,188.4 L669.3,177.1 L674.5,192.9 L679.7,166.6 L684.8,189.0 L690.0,199.2 L695.2,193.6 L700.3,211.9 L705.5,197.3 L710.7,206.5 L715.8,182.4 L721.0,187.1 L726.2,202.5 L731.3,222.5 L736.5,215.9 L741.7,218.2 L746.8,221.4 L752.0,222.4 L757.2,202.7 L762.3,229.2 L767.5,233.9 L772.7,208.2 L777.8,221.8 L783.0,211.3 L788.2,230.8 L793.3,218.9 L798.5,228.1 L803.7,226.8 L808.8,230.3 L814.0,238.8 L819.2,250.8 L824.3,250.3 L829.5,238.3 L834.7,240.7 L839.8,243.2 L845.0,257.0 L850.2,253.8 L855.3,254.2 L860.5,259.5 L865.7,259.7 L870.8,266.4 L876.0,267.4" fill="none" stroke="#ff7f0e" stroke-width="1.6" stroke-linejoin="round" style="animation-delay:0.25s"/>
+<rect x="70" y="334" width="12" height="12" rx="2" fill="#1f77b4"/>
+<text class="legend" x="88" y="344">ReadThroughput</text>
+<rect x="224" y="334" width="12" height="12" rx="2" fill="#ff7f0e"/>
+<text class="legend" x="242" y="344">WriteThroughput</text>
+</svg>

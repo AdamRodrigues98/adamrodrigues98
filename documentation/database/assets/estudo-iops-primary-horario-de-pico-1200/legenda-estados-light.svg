@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 290" width="300" height="290" font-family="'Amazon Ember','Helvetica Neue',Roboto,Arial,sans-serif" role="img" aria-label="Legenda dos estados">
+<title>Legenda dos estados</title>
+<style>
+.it{animation:slide 8s ease infinite both}
+@keyframes slide{0%{opacity:0;transform:translateX(-10px)}10%{opacity:1;transform:none}90%{opacity:1}100%{opacity:0}}
+.hl{animation:hl 8s ease infinite}
+@keyframes hl{0%,20%{opacity:0}30%,85%{opacity:1}100%{opacity:0}}
+</style>
+<rect x="0.5" y="0.5" width="299" height="289" rx="12" fill="#ffffff" stroke="#d1d5db"/>
+<text x="16" y="28" font-size="14" font-weight="700" fill="#16191f">Estados (Waits)</text>
+<rect class="hl" x="10" y="182" width="276" height="24" rx="6" fill="#fdecea"/>
+<g class="it" style="animation-delay:0.00s"><rect x="18" y="43" width="15" height="15" rx="3" fill="#98df8a"/><text x="42" y="55" font-size="14" fill="#16191f">closing tables</text></g>
+<g class="it" style="animation-delay:0.12s"><rect x="18" y="67" width="15" height="15" rx="3" fill="#ffbb78"/><text x="42" y="79" font-size="14" fill="#16191f">optimizing</text></g>
+<g class="it" style="animation-delay:0.24s"><rect x="18" y="91" width="15" height="15" rx="3" fill="#aec7e8"/><text x="42" y="103" font-size="14" fill="#16191f">preparing</text></g>
+<g class="it" style="animation-delay:0.36s"><rect x="18" y="115" width="15" height="15" rx="3" fill="#bcbd22"/><text x="42" y="127" font-size="14" fill="#16191f">freeing items</text></g>
+<g class="it" style="animation-delay:0.48s"><rect x="18" y="139" width="15" height="15" rx="3" fill="#e377c2"/><text x="42" y="151" font-size="14" fill="#16191f">Opening tables</text></g>
+<g class="it" style="animation-delay:0.60s"><rect x="18" y="163" width="15" height="15" rx="3" fill="#dbdb8d"/><text x="42" y="175" font-size="14" fill="#16191f">update</text></g>
+<g class="it" style="animation-delay:0.72s"><rect x="18" y="187" width="15" height="15" rx="3" fill="#c7c7c7"/><text x="42" y="199" font-size="14" fill="#16191f">waiting for handler commit</text></g>
+<g class="it" style="animation-delay:0.84s"><rect x="18" y="211" width="15" height="15" rx="3" fill="#8c564b"/><text x="42" y="223" font-size="14" fill="#16191f">starting</text></g>
+<g class="it" style="animation-delay:0.96s"><rect x="18" y="235" width="15" height="15" rx="3" fill="#ff7f0e"/><text x="42" y="247" font-size="14" fill="#16191f">statistics</text></g>
+<g class="it" style="animation-delay:1.08s"><rect x="18" y="259" width="15" height="15" rx="3" fill="#9467bd"/><text x="42" y="271" font-size="14" fill="#16191f">executing</text></g>
+</svg>

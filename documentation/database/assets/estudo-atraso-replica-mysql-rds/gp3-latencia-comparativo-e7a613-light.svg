@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" width="1000" height="400" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Inter,Helvetica,Arial,sans-serif" role="img" aria-label="Antes e depois: latência típica piorou em frações de ms, piores momentos do dia melhoraram 84 a 91 por cento">
+<title>Antes e depois: latência típica piorou em frações de ms, piores momentos do dia melhoraram 84 a 91 por cento</title>
+<style>
+.grow{transform-box:fill-box;transform-origin:bottom;animation:grow 9s cubic-bezier(.2,.7,.2,1) infinite both}
+@keyframes grow{0%{transform:scaleY(0);opacity:1}10%,92%{transform:scaleY(1);opacity:1}100%{transform:scaleY(1);opacity:0}}
+.growx{transform-box:fill-box;transform-origin:left;animation:growx 9s cubic-bezier(.2,.7,.2,1) infinite both}
+@keyframes growx{0%{transform:scaleX(0);opacity:1}12%,92%{transform:scaleX(1);opacity:1}100%{transform:scaleX(1);opacity:0}}
+.fade{animation:fade 9s ease-out infinite both}
+@keyframes fade{0%,12%{opacity:0}22%,92%{opacity:1}100%{opacity:0}}
+.draw{stroke-dasharray:var(--l);stroke-dashoffset:var(--l);animation:draw 9s ease-out infinite both}
+@keyframes draw{0%{stroke-dashoffset:var(--l);opacity:1}40%,92%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:0}}
+.pulse{animation:pulse 1.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.5)}}
+</style>
+<defs></defs>
+<rect width="1000" height="400" fill="#fcfcfb"/>
+<text x="24.0" y="34.0" font-size="18" fill="#0b0b0b" text-anchor="start" font-weight="650" >Antes e depois da troca</text>
+<text x="24.0" y="54.0" font-size="12.5" fill="#52514e" text-anchor="start" font-weight="400" >Cada painel tem a sua própria escala</text>
+<rect x="24" y="76" width="300" height="270" rx="8" fill="none" stroke="#e6e5e0"/>
+<text x="38.0" y="100.0" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="650" >Latência típica por operação (ms)</text>
+<path d="M67.0,290.0 V215.4 Q67.0,211.4 71.0,211.4 H103.0 Q107.0,211.4 107.0,215.4 V290.0 Z" fill="#9d9c96" class="grow" style="animation-delay:0.00s"/>
+<text x="87.0" y="205.4" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" class="fade" style="animation-delay:0.30s">0,393</text>
+<path d="M111.0,290.0 V172.8 Q111.0,168.8 115.0,168.8 H147.0 Q151.0,168.8 151.0,172.8 V290.0 Z" fill="#2a78d6" class="grow" style="animation-delay:0.15s"/>
+<text x="131.0" y="162.8" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" class="fade" style="animation-delay:0.30s">0,606</text>
+<text x="109.0" y="308.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400" >leitura</text>
+<text x="109.0" y="326.0" font-size="12" fill="#d03b3b" text-anchor="middle" font-weight="700" >▲ 54% pior</text>
+<path d="M197.0,290.0 V240.0 Q197.0,236.0 201.0,236.0 H233.0 Q237.0,236.0 237.0,240.0 V290.0 Z" fill="#9d9c96" class="grow" style="animation-delay:0.10s"/>
+<text x="217.0" y="230.0" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" class="fade" style="animation-delay:0.30s">0,270</text>
+<path d="M241.0,290.0 V156.8 Q241.0,152.8 245.0,152.8 H277.0 Q281.0,152.8 281.0,156.8 V290.0 Z" fill="#2a78d6" class="grow" style="animation-delay:0.25s"/>
+<text x="261.0" y="146.8" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" class="fade" style="animation-delay:0.30s">0,686</text>
+<text x="239.0" y="308.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400" >escrita</text>
+<text x="239.0" y="326.0" font-size="12" fill="#d03b3b" text-anchor="middle" font-weight="700" >▲ 154% pior</text>
+<line x1="38" y1="290" x2="310" y2="290" stroke="#b8b7b0"/>
+<rect x="350" y="76" width="300" height="270" rx="8" fill="none" stroke="#e6e5e0"/>
+<text x="364.0" y="100.0" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="650" >Pior latência do dia (ms)</text>
+<path d="M393.0,290.0 V217.9 Q393.0,213.9 397.0,213.9 H429.0 Q433.0,213.9 433.0,217.9 V290.0 Z" fill="#9d9c96" class="grow" style="animation-delay:0.20s"/>
+<text x="413.0" y="207.9" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" class="fade" style="animation-delay:0.50s">5,47</text>
+<path d="M437.0,290.0 V281.5 Q437.0,277.5 441.0,277.5 H473.0 Q477.0,277.5 477.0,281.5 V290.0 Z" fill="#2a78d6" class="grow" style="animation-delay:0.35s"/>
+<text x="457.0" y="271.5" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" class="fade" style="animation-delay:0.50s">0,90</text>
+<text x="435.0" y="308.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400" >leitura</text>
+<text x="435.0" y="326.0" font-size="12" fill="#006300" text-anchor="middle" font-weight="700" >▼ 84% melhor</text>
+<path d="M523.0,290.0 V150.3 Q523.0,146.3 527.0,146.3 H559.0 Q563.0,146.3 563.0,150.3 V290.0 Z" fill="#9d9c96" class="grow" style="animation-delay:0.30s"/>
+<text x="543.0" y="140.3" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" class="fade" style="animation-delay:0.50s">10,33</text>
+<path d="M567.0,290.0 V271.3 Q567.0,267.3 571.0,267.3 H603.0 Q607.0,267.3 607.0,271.3 V290.0 Z" fill="#2a78d6" class="grow" style="animation-delay:0.45s"/>
+<text x="587.0" y="261.3" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" class="fade" style="animation-delay:0.50s">1,63</text>
+<text x="565.0" y="308.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400" >escrita</text>
+<text x="565.0" y="326.0" font-size="12" fill="#006300" text-anchor="middle" font-weight="700" >▼ 84% melhor</text>
+<line x1="364" y1="290" x2="636" y2="290" stroke="#b8b7b0"/>
+<rect x="676" y="76" width="300" height="270" rx="8" fill="none" stroke="#e6e5e0"/>
+<text x="690.0" y="100.0" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="650" >Pior fila do disco (profundidade)</text>
+<path d="M784.0,290.0 V149.8 Q784.0,145.8 788.0,145.8 H820.0 Q824.0,145.8 824.0,149.8 V290.0 Z" fill="#9d9c96" class="grow" style="animation-delay:0.40s"/>
+<text x="804.0" y="139.8" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" class="fade" style="animation-delay:0.70s">103,67</text>
+<path d="M828.0,290.0 V280.6 Q828.0,276.6 832.0,276.6 H864.0 Q868.0,276.6 868.0,280.6 V290.0 Z" fill="#2a78d6" class="grow" style="animation-delay:0.55s"/>
+<text x="848.0" y="270.6" font-size="11.5" fill="#0b0b0b" text-anchor="middle" font-weight="600" class="fade" style="animation-delay:0.70s">9,60</text>
+<text x="826.0" y="308.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="400" >fila</text>
+<text x="826.0" y="326.0" font-size="12" fill="#006300" text-anchor="middle" font-weight="700" >▼ 91% melhor</text>
+<line x1="690" y1="290" x2="962" y2="290" stroke="#b8b7b0"/>
+<rect x="24" y="371" width="11" height="11" rx="2" fill="#9d9c96" stroke="none"/>
+<text x="41.0" y="381.0" font-size="11.5" fill="#52514e" text-anchor="start" font-weight="400" >Antes (io2)</text>
+<rect x="154" y="371" width="11" height="11" rx="2" fill="#2a78d6" stroke="none"/>
+<text x="171.0" y="381.0" font-size="11.5" fill="#52514e" text-anchor="start" font-weight="400" >Depois (gp3)</text>
+</svg>
