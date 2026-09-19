@@ -234,23 +234,23 @@ Account does not have one of required pricing tier(s) ENTERPRISE, DEDICATED, OEM
 
 ```mermaid
 flowchart LR
-    subgraph DBX[Databricks (plano gerenciado)]
+    subgraph DBX["Databricks (plano gerenciado)"]
         A[Serverless Compute] --> B[NCC]
         B --> C[Private Endpoint Rule]
     end
 
     C -->|AWS PrivateLink| D
 
-    subgraph DATA[AWS (VPC DATA)]
+    subgraph DATA["AWS (VPC DATA)"]
         D[VPC Endpoint Service] --> E[NLB interno]
-        E --> F[Target Group<br/>TCP / tipo IP]
-        L[Lambda ip-sync] -.atualiza IPs.-> F
-        EB[EventBridge] -.agenda.-> L
+        E --> F["Target Group<br/>TCP / tipo IP"]
+        L[Lambda ip-sync] -.->|atualiza IPs| F
+        EB[EventBridge] -.->|agenda| L
     end
 
     F -->|TCP 3306| G
 
-    subgraph PROD[AWS (VPC PROD)]
+    subgraph PROD["AWS (VPC PROD)"]
         G[(RDS MySQL privado)]
     end
 ```
