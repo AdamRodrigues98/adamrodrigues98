@@ -337,6 +337,7 @@ flowchart TD
 | **Aprovação final conforme criticidade** | | Aprova | Aprova | Aprova | Aprova |
 | Executar a migration via Flyway | | Executa | Acompanha | Acompanha | Acompanha |
 | Executar a migration manualmente | | | Executa | | |
+| Ajustar manualmente a `schema_version` ([seção 6.4](#64-aplicação-manual-pelo-time-de-dados)) | | | Executa | | |
 | Atualizar a documentação interna | | | Responsável | | |
 
 ---
@@ -348,7 +349,7 @@ flowchart TD
 Com mais de um comando no mesmo arquivo, o primeiro pode ser aplicado e o segundo falhar. A migration inteira é marcada como falha e o rollback passa a exigir desfazer parte do arquivo manualmente.
 
 > [!IMPORTANT]
-> Cada arquivo de migration deve conter **apenas um comando**, seja DDL ou DML.
+> Cada arquivo de migration deve conter **apenas um comando**, seja DDL ou DML. A exceção é quando o time de Dados aplica a mudança manualmente antes do Flyway (ver [seção 6.4](#64-aplicação-manual-pelo-time-de-dados)).
 
 ### 6.2 Nomes de índices e constraints
 
@@ -358,6 +359,8 @@ Com mais de um comando no mesmo arquivo, o primeiro pode ser aplicado e o segund
 | Índice | `idx_<tabela>_<coluna>` |
 
 ### 6.3 Criação de tabela separada das FKs
+
+O objetivo de separar a tabela e cada FK em arquivos diferentes é **facilitar a identificação de locks no banco**. Cada comando aparece sozinho no processlist, então fica claro qual `ALTER TABLE` está travando, demorando ou copiando a tabela.
 
 **Não recomendado**
 
@@ -401,7 +404,20 @@ Separando em arquivos diferentes fica claro onde está o problema, e um erro em 
 
 #### Quando aparecer `copy to tmp table`
 
-Se o processlist mostrar o estado `copy to tmp table` durante a criação de uma FK, o MySQL está copiando a tabela inteira. Quando a coluna é nova e ainda está `NULL`, use o método abaixo para criar a FK sem cópia:
+Se o processlist mostrar o estado `copy to tmp table` durante a criação de uma FK, o MySQL está copiando a tabela inteira. O método abaixo cria a FK sem cópia, mas só se aplica a **colunas novas, que ainda estão totalmente `NULL` e não vão receber dados até a FK existir**.
+
+> [!CAUTION]
+> Com `foreign_key_checks = OFF` o MySQL **não valida os dados existentes** ao criar a FK. Se a coluna já tiver valores sem correspondência na tabela referenciada, a FK é criada mesmo assim e o banco fica inconsistente. Por isso o uso desse método **cabe à avaliação dos DBAs responsáveis** e não deve ser aplicado por conta própria em uma migration.
+
+Antes de aplicar, o DBA confirma que a coluna não tem nenhum valor preenchido:
+
+```sql
+SELECT COUNT(*) AS linhas_preenchidas
+FROM empresa1.project_member
+WHERE project_id IS NOT NULL;
+```
+
+Com o resultado `0` e a validação do DBA:
 
 ```sql
 SET SESSION foreign_key_checks = OFF;
@@ -414,7 +430,81 @@ SET SESSION foreign_key_checks = ON;
 > [!WARNING]
 > Se a tabela não puder receber escrita durante o processo, troque `LOCK=NONE` por `LOCK=SHARED`.
 
-### 6.4 Criação de coluna separada da FK
+### 6.4 Aplicação manual pelo time de Dados
+
+A separação da [seção 6.3](#63-criação-de-tabela-separada-das-fks) existe para quem aplica a mudança conseguir enxergar os locks. Quando um **DBA ou alguém do time de Dados** aplica os comandos manualmente, um por vez e acompanhando o processlist, esse acompanhamento já acontece fora do Flyway.
+
+Nesse caso a migration pode ter a tabela e as FKs **no mesmo arquivo**, porque o Flyway serve apenas para registrar a mudança no histórico. O fluxo é:
+
+1. O time de Dados aplica cada comando manualmente, separado, monitorando locks conforme a [seção 7](#7-identificação-de-locks)
+2. O arquivo de migration com tudo junto é versionado e passa pelo PR normalmente
+3. O job do Jenkins executa o Flyway. Como os objetos já existem, o primeiro comando falha e a linha fica registrada na `schema_version` com `success = 0`
+4. O time de Dados confere se a estrutura no banco é igual à do arquivo
+5. O time de Dados atualiza a linha para `success = 1`
+6. O job é executado novamente para aplicar as migrations seguintes, se houver
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant D as Time de Dados
+    participant DB as MySQL
+    participant J as Job Jenkins
+    participant H as schema_version
+
+    D->>DB: CREATE TABLE (manual)
+    D->>DB: ALTER TABLE ADD FK (manual, uma por vez)
+    J->>DB: flyway migrate (arquivo com tudo junto)
+    DB-->>J: Erro: objeto já existe
+    J->>H: Registra a versão com success = 0
+    D->>DB: Confere a estrutura (SHOW CREATE TABLE)
+    D->>H: UPDATE success = 1
+    J->>DB: flyway migrate (migrations seguintes)
+```
+
+Exemplo de migration com tudo junto:
+
+```sql
+CREATE TABLE `project_member` (
+  `project_id` BIGINT NOT NULL,
+  `member_id` BIGINT NOT NULL,
+  CONSTRAINT `fk_project_member_project_id` FOREIGN KEY (`project_id`) REFERENCES `project` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  CONSTRAINT `fk_project_member_member_id` FOREIGN KEY (`member_id`) REFERENCES `member` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+```
+
+Conferência da estrutura aplicada manualmente:
+
+```sql
+SHOW CREATE TABLE empresa1.project_member;
+```
+
+Localizar a migration com falha:
+
+```sql
+SELECT installed_rank, version, script, checksum, installed_by, installed_on, success
+FROM empresa1.schema_version
+WHERE success = 0;
+```
+
+Marcar a migration como aplicada:
+
+```sql
+UPDATE empresa1.schema_version
+SET success = 1
+WHERE version = '2026.09.19.1'
+  AND success = 0;
+```
+
+> [!CAUTION]
+> Esse procedimento deve ser feito **somente pelo time de Dados**. Um `UPDATE` na `schema_version` sem conferir a estrutura faz o Flyway considerar aplicada uma mudança que pode estar incompleta no banco.
+
+> [!WARNING]
+> Não use `flyway repair` nesse cenário. O `repair` remove a linha com `success = 0` e a próxima execução tenta aplicar a migration de novo. Mantenha a linha e altere apenas o `success`, preservando o checksum gravado pelo Flyway.
+
+> [!NOTE]
+> A migration não pode usar `IF NOT EXISTS` (ver [seção 6.7](#67-não-usar-if-not-exists)). É a falha do `CREATE TABLE` que deixa evidente, no log do Jenkins e na `schema_version`, que o objeto já existia e precisa da conferência manual.
+
+### 6.5 Criação de coluna separada da FK
 
 **Não recomendado**
 
@@ -440,9 +530,9 @@ ALTER TABLE assignment ADD CONSTRAINT fk_assignment_partner_id FOREIGN KEY (part
 
 Se a coluna for nova e ainda não recebe dados, esse método evita a cópia da tabela.
 
-### 6.5 Várias colunas no mesmo `ALTER TABLE`
+### 6.6 Várias colunas no mesmo `ALTER TABLE`
 
-Esta é a exceção à regra de um comando por arquivo: quando todas as colunas suportam `ALGORITHM=INSTANT`, crie todas no mesmo `ALTER TABLE`.
+Esta é outra exceção à regra de um comando por arquivo: quando todas as colunas suportam `ALGORITHM=INSTANT`, crie todas no mesmo `ALTER TABLE`.
 
 **Não recomendado**
 
@@ -466,7 +556,7 @@ ALTER TABLE tenant
 ALGORITHM=INSTANT;
 ```
 
-### 6.6 Não usar `IF NOT EXISTS`
+### 6.7 Não usar `IF NOT EXISTS`
 
 Com `IF NOT EXISTS`, se a tabela já existir o MySQL ignora o comando sem erro. A migration aparece como aplicada com sucesso, mas a estrutura real pode estar diferente da esperada. Use `IF NOT EXISTS` apenas em ambientes de desenvolvimento ou criações manuais.
 
@@ -496,7 +586,7 @@ CREATE TABLE activity_shift_load (
 );
 ```
 
-### 6.7 Evitar FKs e cascatas desnecessárias
+### 6.8 Evitar FKs e cascatas desnecessárias
 
 Cascatas (`ON DELETE CASCADE`, `ON UPDATE CASCADE`) e FKs sem necessidade real podem gerar:
 
@@ -592,7 +682,7 @@ CALL mysql.rds_kill(<id>);
 ```
 
 > [!CAUTION]
-> Ao encerrar uma sessão do Flyway no meio de uma migration, verifique a `schema_version`. Se a linha ficou com `success = 0`, corrija o estado com `flyway repair` antes de executar novamente.
+> Ao encerrar uma sessão do Flyway no meio de uma migration, verifique a `schema_version`. Se a linha ficou com `success = 0` e a mudança **não** foi aplicada, corrija o estado com `flyway repair` antes de executar novamente. Se a mudança foi concluída manualmente pelo time de Dados, siga a [seção 6.4](#64-aplicação-manual-pelo-time-de-dados).
 
 ---
 
